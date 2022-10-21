@@ -1,0 +1,46 @@
+/* project _home
+Home(TOP)における特殊なパーツの定義
+*/
+
+.p-nextevent{
+  font-size: 1.0rem;
+  @include base_bgcolor;
+  //background-color: #2a433a;
+  font-weight: 300;
+  color: #fff;
+  padding:5px;
+
+}
+
+.p-nextevent dl dl{
+    border-bottom: 1px solid #d9d9d9;
+    margin: 0.3em 0 0;
+    padding: 0 0.8em 0.3em 0;
+}
+
+
+  /* 固定画像 */
+.p-fiximg--jets{
+  color: #fff;
+   font-family: "游明朝",YuMincho,"ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+   padding: 15px;
+  background-color: rgba(16, 143, 98, 0.7);
+  line-height: 4.0rem;
+}
+
+
+
+
+
+/* 768px以上(スマホ以外表示)*/
+@media (min-width: 768px) {
+  .p-nextevent{
+      height:180px;
+  }
+
+  .p-fiximg--jets{
+    line-height: 4.5rem;
+  }
+
+
+}

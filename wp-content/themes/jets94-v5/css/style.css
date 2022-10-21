@@ -1,0 +1,289 @@
+.topleft {
+  margin: 0px;
+  width: 100%;
+  position: relative;
+}
+.topleft img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border: 0;
+}
+.topleft .slider {
+  margin: 0;
+}
+.topleft .slider p.ttl {
+  display: none;
+}
+.topleft .slider .slick-current p.ttl {
+  display: inline;
+  background-color: rgba(0,113,142,0.5);
+  bottom: 1px;
+  padding: 20px 25px;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+}
+.name p.line {
+  background-color: #043a27;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 5px;
+  position: absolute;
+  top: 10px;
+  width: 60%;
+  z-index: 10;
+}
+.topright {
+  border: 0;
+}
+.topright .topics {
+  position: relative;
+}
+.topright .topics img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border: 0;
+}
+.topright .nextevent {
+  font-size: 1rem;
+  background-color: #043a27;
+  font-weight: 300;
+  color: #fff;
+  padding: 5px;
+  width: 100%;
+  height: 200px;
+}
+/*====================================================================
+TOP slick
+====================================================================*/
+.topleft .slick-slide {
+  margin: 0 1px;
+}
+.topleft .slick-prev,
+.topleft .slick-next {
+  z-index: 1;
+}
+.topleft .slick-prev:before,
+.topleft .slick-next:before {
+  color: #000;
+}
+.topleft .slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+.topleft .slick-active {
+  opacity: 1;
+}
+.topleft .slick-current {
+  opacity: 1;
+}
+.topleft .thumb {
+  overflow: hidden;
+  margin: 2px 0 0;
+}
+.topleft .thumb img {
+  height: 80px;
+}
+.topleft .thumb .slick-slide {
+  cursor: pointer;
+}
+.topleft .thumb .slick-slide:hover {
+  opacity: 0.7;
+}
+.topleft .thumb .slick-track {
+  transform: unset !important;
+}
+.topleft .link-list {
+  margin: 5px 0px;
+}
+/*====================================================================
+TOP ranking
+====================================================================*/
+section>p {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0 0 10px 10px;
+}
+.row-slider {
+  overflow: hidden;
+}
+.inner {
+  margin: 0 auto;
+  width: 100%;
+}
+.lineup {
+  position: relative;
+  counter-reset: count;
+}
+.lineup-carousel li {
+  text-align: center;
+  margin-right: 14px;
+  position: relative;
+}
+.lineup-carousel img {
+  display: block;
+  margin-bottom: 1px;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border: 0;
+}
+.lineup-carousel p {
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+}
+.lineup-carousel .next {
+  top: 30%;
+  right: 0%;
+  color: #fff;
+}
+.lineup-carousel .prev {
+  top: 30%;
+  left: 0%;
+  color: #fff;
+}
+.lineup-carousel .slick-list {
+  overflow: visible;
+}
+.lineup-carousel .slick-nav-arrows {
+  position: absolute;
+  top: -40px;
+  right: 0%;
+}
+.lineup-carousel .slick-arrow {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 5;
+}
+.lineup-carousel .slick-next {
+  right: 0;
+}
+.lineup-carousel .slick-prev {
+  left: -80px;
+}
+.lineup-carousel .slick-next:before,
+.lineup-carousel .slick-prev:before {
+  color: #000;
+}
+.lineup-carousel .slick-disabled {
+  display: none !important;
+}
+.lineup-carousel.number li::before {
+  background-color: #333;
+  border-radius: 2px;
+  color: #fff;
+  counter-increment: count;
+  content: counter(count);
+  float: left;
+  height: 25px;
+  left: 0;
+  line-height: 25px;
+  opacity: 0.8;
+  position: absolute;
+  top: -1px;
+  width: 25px;
+  z-index: 1;
+}
+/*====================================================================
+TOP sec
+====================================================================*/
+.sec {
+  border: 1px solid #000;
+  margin: 5px;
+}
+.sec .ttl {
+  display: flex;
+}
+.sec .ttl h3 {
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #115740;
+}
+.sec .ttl p {
+  margin-left: auto;
+  padding: 10px;
+}
+.sec ul li {
+  border-bottom: 1px solid #e8e8e8;
+  width: 95%;
+}
+/*====================================================================
+TOP other
+====================================================================*/
+#twitter-widget-0 {
+  width: 95% !important;
+}
+/*====================================================================
+TOP link-croud
+====================================================================*/
+.link-croud h4 {
+  font-size: 16px;
+  margin: 5px 0 10px 0;
+  font-weight: bold;
+}
+.link-croud li {
+  padding: 5px;
+}
+.link-croud li a {
+  background: #6f885a;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1em;
+  margin-top: 3px;
+  margin-left: 1px;
+  padding: 8px;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+/* 768px～：タブレット
+------------------------------ */
+/* 1080px〜：小型PC
+------------------------------ */
+@media screen and (min-width: 1080px) {
+  section.top {
+    display: flex;
+  }
+  .topleft {
+    width: 70%;
+  }
+  .topleft img {
+    height: 461px;
+  }
+  .topright .topics img {
+    height: 30%;
+  }
+  .topright .topright {
+    width: 30%;
+  }
+  .topright .nextevent {
+    height: 58%;
+  }
+}
+/* 1280px〜：大型PC
+------------------------------ */
+@media screen and (min-width: 1280px) {
+  .nextevent {
+    height: 50%;
+  }
+}
+/* 1500px〜：超大型PC
+------------------------------ */
+@media screen and (min-width: 1600px) {
+  .nextevent {
+    height: 46%;
+  }
+}

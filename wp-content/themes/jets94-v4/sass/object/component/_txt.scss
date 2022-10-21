@@ -1,0 +1,133 @@
+/* component-navi
+*/
+
+.c-ttl--headline a,.c-ttl--topics a{
+  color: #fff;
+}
+
+.c-ttl--headline,.c-ttl--topics {
+    background-color: rgba(0, 113, 142, 0.5);
+    bottom: 1px;
+    left: 0;
+    padding: 20px 25px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .c-ttl--contents {
+        font-size: 2.2rem;
+        color:#108F62;
+        border-bottom: 1px solid #28433A;
+        padding-bottom: 15px;
+        margin: 5px 0;
+  }
+
+  .c-txt--headline P{
+  background-color: rgb(16, 143, 98);
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 5px;
+  position: absolute;
+  top: 10px;
+  width: 60%;
+  z-index: 10;
+  }
+
+.c-list ,.wpp-list{
+  list-style-type: none;
+  overflow: hidden;
+  zoom: 1;
+  padding: 5px 0px;
+}
+.c-list,.wpp-list{counter-reset: count;}/* カウンターのリセット カウンターの要素の前に必要。1回締めて終わらせる必要があるので、ランキングのリストより前にc-listが終わってる必要がある*/
+
+.c-list>li,.wpp-list li {
+  clear: both;
+ font-size: 1.4rem;
+ border-bottom: 1px solid #e8e8e8;
+ float: none;
+ overflow: hidden;
+ padding: 8px 0px;
+ overflow: visible;
+position: relative;
+}
+
+.c-list--morenews>li,.c-list--youtube>li,.wpp-list li{
+  height: 110px;
+}
+.c-list--rss_all>li{
+  font-size: 1.6rem;
+  /*height: 60px;*/
+}
+.c-list--morenews p{
+  margin: 0.2px;
+}
+.c-list_comment{
+  margin: 0.2px;
+}
+
+
+.c-adtxt-article{
+  font-weight: bold;
+}
+
+
+//プラグイン Rss Aggregatorの不要な「Older posts」を非表示
+.nav-links {
+    display: none;
+}
+
+/* woo-list はプラグインによる自動設定 */
+.wpp-list li{
+   overflow: visible;
+  position: relative;
+
+}
+
+.wpp-list>li::before {
+  background-color: #333;
+    border-radius: 2px;
+    color: #fff;
+    counter-increment: count; /* カウンター */
+    content: counter(count); /* カウンター */
+    float: left;
+    height: 25px;
+    left: 0;
+    line-height: 25px;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    top: -1px;
+    width: 25px;
+    z-index: 1;
+}
+
+.wpp-list img:hover,.c-list--youtube img:hover{
+  opacity: .5;
+}
+
+.c-searchlist--item .media-body{
+  padding-left: 10px;
+}
+.c-searchlist--item h1{
+  font-size:1.8rem;
+  padding-bottom:5px;
+}
+.c-searchlist--item .media-body{
+  padding-left: 10px;
+}
+
+.c-searchlist--item{
+  clear: both;
+      font-size: 1.4rem;
+      border-bottom: 1px solid #e8e8e8;
+      float: none;
+      overflow: hidden;
+      padding: 8px 0px;
+}
+/* 768px以上(スマホ以外表示)*/
+@media (min-width: 768px) {
+  .c-txt--headline P{
+  padding: 10px 10px;}
+}

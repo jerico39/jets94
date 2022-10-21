@@ -1,0 +1,92 @@
+//header
+#loading
+  .spinner
+
+header
+    .header-contents
+        .header-left
+            .header-logo
+                a(rel="" href="/" title="タイトル1"): img(src="assets/img/jets94-logo-header.svg")
+            .header-menu
+                ul
+                    li: a(href="/rss-all/") 試合結果
+                    li: a(href="/article-all/") ニュース一覧
+                    li: a(href="/category/result-all/") NFLブログ更新情報
+                    li: a(href="/wwe/") WWEYoutube
+                    li: a(href="/wwe/") WWEの森
+
+        .header-right
+            .header-sns
+                ul
+                    li: a(href="https://twitter.com/jetskyou" target="_blank"): i.fab.fa-twitter.fa-2x
+                    li: a(href="https://www.facebook.com/jets94/" target="_blank"): i.fab.fa-facebook-square.fa-2x
+                    li: a(href="https://www.youtube.com/channel/UCr3e1KBWNJAlI6Nc4nSpEjw" target="_blank"): i.fab.fa-youtube.fa-2x
+            .header-search
+                form(role="search" method="get")
+                    input(type="text" id="search-text")
+                    button(type="submit" value="&#xf002" class="fas") 
+                        i(class="fas fa-search")
+        span.btn-gnavi#js-hamburger
+            span
+            span
+            span
+        nav.gnavi#js-nav
+            img(src="assets/img/jets94-logo-header.svg")
+            .search
+                    form(role="search" method="get")
+                        input(type="text" id="search-text")
+                        button(type="submit" value="&#xf002" class="fas") 
+                            i(class="fas fa-search")
+                    a(href="https://twitter.com/jetskyou" target="_blank"): i.fab.fa-twitter.fa-2x
+                    a(href="https://www.facebook.com/jets94/" target="_blank"): i.fab.fa-facebook-square.fa-2x
+                    a(href="https://www.youtube.com/channel/UCr3e1KBWNJAlI6Nc4nSpEjw" target="_blank"): i.fab.fa-youtube.fa-2x
+
+            ul.accordion.empty  <!--メニューがズレるので必要-->
+                li
+                    p &nbsp;
+            ul.accordion
+                li
+                    p 速報リンク
+                    div.i_box: i.one_i
+                ul.small-list
+                    li: a(href="http://www.nfl.com/scores" target="_blank") 速報：Score(スコア)
+                    li: a(href="https://nfljapan.com/broadcast" target="_blank") 放送予定(NFL JAPAN)
+                    li: a(href="https://nfljapan.com/standing/division" target="_blank") 順位表(NFL JAPAN) 
+                    li: a(href="https://www.youtube.com/user/NFL" target="_blank") Youtube(NFLハイライトなど)
+                    li: a(href="http://www.tsp21.com/sports/nfl/" target="_blank") TSP SPORTS -NFL-
+                    
+            ul.accordion        
+                li
+                    p メインメニュー
+                    div.i_box: i.one_i
+                ul.small-list
+                    li: a(href="/rss-all/") NFL応援RSS
+                    li: a(href="/article-all/") ニュース一覧
+                    li: a(href="/category/result-all/") 試合結果
+                    li: a(href="/wwe/") WWEの森
+            ul.accordion        
+                li
+                    p オリジナルコンテンツ
+                    div.i_box: i.one_i
+                ul.small-list
+                    li: a(href="/wwe/") NFLを見る方法
+                    li: a(href="/rss-all/") オードリー春日の呪い
+                    li: a(href="/article-all/") 特集アイシールド21
+                    li: a(href="/superbowl-what/") スーパーボウルとは？
+                    li: a(href="/nfl-word/") アメフト用語集
+                    li: a(href="/penalty/") NFL反則集
+                    li: a(href="/wwe/") 読めない選手名検索
+            ul.accordion
+                li
+                    p 人気のカテゴリ・タグ
+                    div.i_box: i.one_i
+                ul.small-list
+                    li: a(href="/tag/そうだったのか！/") そうだったのか！(NFLトリビア)
+                    li: a(href="/tag/トム・ブレイディ/") トム・ブレイディ
+                    li: a(href="/tag/がっかり・オブ・ザ・イヤー/") がっかり・オブ・ザ・イヤー  
+                    li: a(href="/tag/映画/") 映画
+
+    div(id="fb-root")
+
+//end header
+

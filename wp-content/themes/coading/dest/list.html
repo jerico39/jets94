@@ -1,0 +1,228 @@
+<!DOCTYPE html><html lang="jp">
+<head>
+  <title>listページですよ</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link(rel="stylesheet", href="https://cdn.simplecss.org/simple.min.css")-->
+  <link rel="stylesheet" href="assets/css/lib/simple.min.css">
+  <!-- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css")-->
+  <link rel="stylesheet" href="assets/css/lib/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/sidebar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/util.css">
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/common.js"></script>
+</head><body>
+<!--header-->
+<div id="loading">
+  <div class="spinner"></div>
+</div>
+<header>
+  <div class="header-contents">
+    <div class="header-left">
+      <div class="header-logo"><a rel="" href="/" title="タイトル1"><img src="assets/img/jets94-logo-header.svg"></a></div>
+      <div class="header-menu">
+        <ul>
+          <li><a href="/rss-all/">試合結果</a></li>
+          <li><a href="/article-all/">ニュース一覧</a></li>
+          <li><a href="/category/result-all/">NFLブログ更新情報</a></li>
+          <li><a href="/wwe/">WWEYoutube</a></li>
+          <li><a href="/wwe/">WWEの森</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="header-sns">
+        <ul>
+          <li><a href="https://twitter.com/jetskyou" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+          <li><a href="https://www.facebook.com/jets94/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCr3e1KBWNJAlI6Nc4nSpEjw" target="_blank"><i class="fab fa-youtube fa-2x"></i></a></li>
+        </ul>
+      </div>
+      <div class="header-search">
+        <form role="search" method="get">
+          <input type="text" id="search-text">
+          <button class="fas" type="submit" value="&amp;#xf002"> <i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </div><span class="btn-gnavi" id="js-hamburger"><span></span><span></span><span></span></span>
+    <nav class="gnavi" id="js-nav"><img src="assets/img/jets94-logo-header.svg">
+      <div class="search">
+        <form role="search" method="get">
+          <input type="text" id="search-text">
+          <button class="fas" type="submit" value="&amp;#xf002"> <i class="fas fa-search"></i></button>
+        </form><a href="https://twitter.com/jetskyou" target="_blank"><i class="fab fa-twitter fa-2x"></i></a><a href="https://www.facebook.com/jets94/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a><a href="https://www.youtube.com/channel/UCr3e1KBWNJAlI6Nc4nSpEjw" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+      </div>
+      <ul class="accordion empty"> <!--メニューがズレるので必要-->
+        <li>
+          <p>&nbsp;</p>
+        </li>
+      </ul>
+      <ul class="accordion">
+        <li>
+          <p>速報リンク</p>
+          <div class="i_box"><i class="one_i"></i></div>
+        </li>
+        <ul class="small-list">
+          <li><a href="http://www.nfl.com/scores" target="_blank">速報：Score(スコア)</a></li>
+          <li><a href="https://nfljapan.com/broadcast" target="_blank">放送予定(NFL JAPAN)</a></li>
+          <li><a href="https://nfljapan.com/standing/division" target="_blank">順位表(NFL JAPAN) </a></li>
+          <li><a href="https://www.youtube.com/user/NFL" target="_blank">Youtube(NFLハイライトなど)</a></li>
+          <li><a href="http://www.tsp21.com/sports/nfl/" target="_blank">TSP SPORTS -NFL-</a></li>
+        </ul>
+      </ul>
+      <ul class="accordion">       
+        <li>
+          <p>メインメニュー</p>
+          <div class="i_box"><i class="one_i"></i></div>
+        </li>
+        <ul class="small-list">
+          <li><a href="/rss-all/">NFL応援RSS</a></li>
+          <li><a href="/article-all/">ニュース一覧</a></li>
+          <li><a href="/category/result-all/">試合結果</a></li>
+          <li><a href="/wwe/">WWEの森</a></li>
+        </ul>
+      </ul>
+      <ul class="accordion">       
+        <li>
+          <p>オリジナルコンテンツ</p>
+          <div class="i_box"><i class="one_i"></i></div>
+        </li>
+        <ul class="small-list">
+          <li><a href="/wwe/">NFLを見る方法</a></li>
+          <li><a href="/rss-all/">オードリー春日の呪い</a></li>
+          <li><a href="/article-all/">特集アイシールド21</a></li>
+          <li><a href="/superbowl-what/">スーパーボウルとは？</a></li>
+          <li><a href="/nfl-word/">アメフト用語集</a></li>
+          <li><a href="/penalty/">NFL反則集</a></li>
+          <li><a href="/wwe/">読めない選手名検索</a></li>
+        </ul>
+      </ul>
+      <ul class="accordion">
+        <li>
+          <p>人気のカテゴリ・タグ</p>
+          <div class="i_box"><i class="one_i"></i></div>
+        </li>
+        <ul class="small-list">
+          <li><a href="/tag/そうだったのか！/">そうだったのか！(NFLトリビア)</a></li>
+          <li><a href="/tag/トム・ブレイディ/">トム・ブレイディ</a></li>
+          <li><a href="/tag/がっかり・オブ・ザ・イヤー/">がっかり・オブ・ザ・イヤー  </a></li>
+          <li><a href="/tag/映画/">映画</a></li>
+        </ul>
+      </ul>
+    </nav>
+  </div>
+  <div id="fb-root"></div>
+</header>
+<!--end header-->
+<link rel="stylesheet" href="assets/css/list.css">
+<link rel="stylesheet" href="assets/js/lib/slick/slick-theme.css">
+<link rel="stylesheet" href="assets/js/lib/slick/slick.css">
+<script src="assets/js/lib/slick/slick.min.js"></script>
+<script src="assets/js/list.js"></script>
+<div class="container">
+  <div class="l-page">
+    <div class="l-main">
+      <section class="row-slider ranking">
+        <div class="ttl">
+          <h3>週間アクセスランキング</h3><a href="/ranking-all/">【ランキング一覧へ】</a>
+        </div>
+        <div class="inner">
+          <div class="lineup">
+            <ul class="lineup-carousel number">
+              <li><a rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news01.jpg" alt="ranking"></a><a rel="/1" href="" title="タイトル1">
+                  <p>RANK1</p></a></li>
+              <li><a rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news02.jpg" alt="ranking"></a><a rel="/1" href="" title="タイトル1">
+                  <p>RANK2</p></a></li>
+              <li><a rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news03.jpg" alt="ranking"></a><a rel="/1" href="" title="タイトル1">
+                  <p>RANK3</p></a></li>
+              <li><a rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news04.jpg" alt="ranking"></a><a rel="/1" href="" title="タイトル1">
+                  <p>RANK4</p></a></li>
+              <li><a rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news05.jpg" alt="ranking"></a><a rel="/1" href="" title="タイトル1">
+                  <p>RANK5 </p></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="list">
+        <ul class="result-list">
+          <li> <a class="imglink" rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news01.jpg" alt="ranking"></a>
+            <div class="result-link"> 
+              <div class="title"> <span class="date"><i class="fas fa-calendar-alt">2022年5月2日</i></span><a rel="/1" href="" title="タイトル1">
+                  <p>記事のタイトルです。記事のタイトルです。記事のタイトルです。記事のタイトルです。記事のタイトルです。記事のタイトルです。記事のタイトルです。</p></a></div>
+              <div class="meta">
+                <div class="cate"><i class="fas fa-folder-open"></i><a href="/category/news-all/news2021-2022/" rel="category tag">NEWS(2021-2022) </a><a href="/category/news-all/news2021-2022/" rel="category tag">NEWS(2021-2022)</a></div>
+                <div class="tag"><i class="fas fa-tags"></i><a href="/tag/%e3%82%b9%e3%83%bc%e3%83%91%e3%83%bc%e3%83%9c%e3%82%a6%e3%83%ab/" rel="tag">スーパーボウル</a><a href="/tag/%e3%82%b9%e3%83%bc%e3%83%91%e3%83%bc%e3%83%9c%e3%82%a6%e3%83%ab/" rel="tag">スーパーボウル</a><a href="/tag/%e3%82%b9%e3%83%bc%e3%83%91%e3%83%bc%e3%83%9c%e3%82%a6%e3%83%ab/" rel="tag">スーパーボウル</a></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="pager-index"><a class="prev page-numbers" href="/?s=%E3%82%B5&amp;paged=1">«</a>
+<a class="page-numbers" href="/?s=%E3%82%B5&amp;paged=1">1</a>
+<span aria-current="page" class="page-numbers current">2</span>
+<a class="page-numbers" href="/?s=%E3%82%B5&amp;paged=3">3</a>
+<a class="page-numbers" href="/?s=%E3%82%B5&amp;paged=4">4</a>
+<a class="next page-numbers" href="/?s=%E3%82%B5&amp;paged=3">»</a>
+        </div>
+      </section>
+    </div>
+    <div class="l-sidebar">             
+      <!--sidebar-->
+      <section class="ad">
+        <p>#ad.ad</p>
+      </section>
+      <section class="side-list"> 
+        <div class="ttl">
+          <h3>最新NEWS</h3>
+          <p><a href="/rss-all/">【一覧へ】</a></p>
+        </div>
+        <ul>
+          <li><a rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news01.jpg" alt="ranking"></a><a rel="/1" href="" title="タイトル1">
+              <p>RANK1</p></a></li>
+          <li><a rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news02.jpg" alt="ranking"></a><a rel="/1" href="" title="タイトル1">
+              <p>RANK2</p></a></li>
+          <li><a rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news03.jpg" alt="ranking"></a><a rel="/1" href="" title="タイトル1">
+              <p>RANK3</p></a></li>
+          <li><a rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news04.jpg" alt="ranking"></a><a rel="/1" href="" title="タイトル1">
+              <p>RANK4</p></a></li>
+          <li><a rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news05.jpg" alt="ranking"></a><a rel="/1" href="" title="タイトル1">
+              <p>RANK5 </p></a></li>
+        </ul>
+      </section>
+      <section class="side-list"> 
+        <div class="ttl">
+          <h3>アクセスランキング</h3>
+          <p><a href="/ranking-all/">【一覧へ】</a></p>
+        </div>
+        <ul>
+          <li><a rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news01.jpg" alt="ranking"></a><a rel="/1" href="" title="タイトル1">
+              <p>RANK1</p></a></li>
+          <li><a rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news02.jpg" alt="ranking"></a><a rel="/1" href="" title="タイトル1">
+              <p>RANK2</p></a></li>
+          <li><a rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news03.jpg" alt="ranking"></a><a rel="/1" href="" title="タイトル1">
+              <p>RANK3</p></a></li>
+          <li><a rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news04.jpg" alt="ranking"></a><a rel="/1" href="" title="タイトル1">
+              <p>RANK4</p></a></li>
+          <li><a rel="/1" href="" title="タイトル1"><img src="assets/img/upload/news05.jpg" alt="ranking"></a><a rel="/1" href="" title="タイトル1">
+              <p>RANK5 </p></a></li>
+        </ul>
+      </section>
+      <section class="amz-sidebar">
+        <p>#ad.amz</p>
+      </section>
+      <section class="ad">
+        <p>#ad.ad</p>
+      </section>
+      <!-- end sidebar-->
+    </div>
+  </div>
+</div>
+<!--footer-->
+<footer>
+  <p class="copyCOPYRIGHT">© 2022 JETS94, LTD.</p>
+</footer>
+<!--end footer--></body> 
+</html>

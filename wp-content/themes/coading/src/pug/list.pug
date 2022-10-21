@@ -1,0 +1,65 @@
+- var pageTitle = 'listページですよ'
+include ./_include/head
+include ./_include/header
+link(rel="stylesheet" href="assets/css/list.css")
+link(rel="stylesheet",  href="assets/js/lib/slick/slick-theme.css")
+link(rel="stylesheet",  href="assets/js/lib/slick/slick.css")
+script(src="assets/js/lib/slick/slick.min.js")
+script(src="assets/js/list.js")
+.container
+    .l-page
+        .l-main
+
+            section.row-slider.ranking
+                .ttl
+                    h3 週間アクセスランキング
+                    a(href="/ranking-all/") 【ランキング一覧へ】
+                .inner
+                    .lineup
+                            ul.lineup-carousel.number
+                                li
+                                    a(rel="/1" href="" title="タイトル1"): img(src="assets/img/upload/news01.jpg" alt="ranking")
+                                    a(rel="/1" href="" title="タイトル1"): p RANK1
+                                li
+                                    a(rel="/1" href="" title="タイトル1"): img(src="assets/img/upload/news02.jpg" alt="ranking")
+                                    a(rel="/1" href="" title="タイトル1"): p RANK2
+                                li
+                                    a(rel="/1" href="" title="タイトル1"): img(src="assets/img/upload/news03.jpg" alt="ranking")
+                                    a(rel="/1" href="" title="タイトル1"): p RANK3
+                                li
+                                    a(rel="/1" href="" title="タイトル1"): img(src="assets/img/upload/news04.jpg" alt="ranking")
+                                    a(rel="/1" href="" title="タイトル1"): p RANK4
+                                li
+                                    a(rel="/1" href="" title="タイトル1"): img(src="assets/img/upload/news05.jpg" alt="ranking")
+                                    a(rel="/1" href="" title="タイトル1"): p RANK5 
+            section.list
+
+                ul.result-list
+                    li 
+                        a.imglink(rel="/1" href="" title="タイトル1"): img(src="assets/img/upload/news01.jpg" alt="ranking")
+                        .result-link  
+                            .title 
+                                span.date: i.fas.fa-calendar-alt 2022年5月2日
+                                a(rel="/1" href="" title="タイトル1"): p 記事のタイトルです。記事のタイトルです。記事のタイトルです。記事のタイトルです。記事のタイトルです。記事のタイトルです。記事のタイトルです。
+                            .meta
+                                .cate
+                                    i.fas.fa-folder-open
+                                    a(href="/category/news-all/news2021-2022/" rel="category tag") NEWS(2021-2022) 
+                                    a(href="/category/news-all/news2021-2022/" rel="category tag") NEWS(2021-2022)
+                                .tag
+                                    i.fas.fa-tags
+                                    a(href="/tag/%e3%82%b9%e3%83%bc%e3%83%91%e3%83%bc%e3%83%9c%e3%82%a6%e3%83%ab/" rel="tag") スーパーボウル
+                                    a(href="/tag/%e3%82%b9%e3%83%bc%e3%83%91%e3%83%bc%e3%83%9c%e3%82%a6%e3%83%ab/" rel="tag") スーパーボウル
+                                    a(href="/tag/%e3%82%b9%e3%83%bc%e3%83%91%e3%83%bc%e3%83%9c%e3%82%a6%e3%83%ab/" rel="tag") スーパーボウル
+            
+                div.pager-index
+                    <a class="prev page-numbers" href="/?s=%E3%82%B5&amp;paged=1">«</a>
+                    <a class="page-numbers" href="/?s=%E3%82%B5&amp;paged=1">1</a>
+                    <span aria-current="page" class="page-numbers current">2</span>
+                    <a class="page-numbers" href="/?s=%E3%82%B5&amp;paged=3">3</a>
+                    <a class="page-numbers" href="/?s=%E3%82%B5&amp;paged=4">4</a>
+                    <a class="next page-numbers" href="/?s=%E3%82%B5&amp;paged=3">»</a>
+          
+        .l-sidebar              
+            include ./_include/sidebar
+include ./_include/footer

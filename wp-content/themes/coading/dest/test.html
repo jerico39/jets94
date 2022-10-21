@@ -1,0 +1,107 @@
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta name="robots" content="noindex,nofollow">
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+<script src="assets/js/common.js"></script>
+<link rel="stylesheet" href="assets/css/style.css"/></head>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<style>
+/*==// スライダーと文字のwrap //==*/
+main > div{ position:relative; }
+/*==// 上に載せる文字部分 //==*/
+main > div section{
+	color:#fff;
+	position:absolute;
+	/*上下中央に文字配置*/
+	top:50%;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	left:10%;
+}
+main > div section h2{ margin-bottom:15px; font-size:30px; font-size:3rem; }
+main > div section p{ font-size:18px; font-size:1.8rem; }
+/*==// スライダーのコンテナ //==*/
+main .slider{
+		padding-top:46px;/*戻るボタンの高さ分あけてます*/
+		width:100%;/* スライダーの幅を指定*/
+		list-style:none;
+	}
+/*==// ここから矢印 //==*/
+.slide-arrow{
+	position:absolute;
+	/*上下中央に矢印配置*/
+	top:50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	z-index:100;
+	cursor:pointer;/*ポインター表示にし、クリック可能なことを視覚的にわかりやすくします*/
+}
+.slide-arrow::before{
+	display:block;
+	color:#fff;
+	font-size:30px;
+	font-weight:900;
+	font-family:"Font Awesome 5 Free";
+}
+.next-arrow{ right:10px; }/*内側に右から10ピクセル移動*/
+.prev-arrow{ left:10px; }/*内側に左から10ピクセル移動*/
+.next-arrow::before{
+	content:"\f054";/*右矢印のアイコンフォント*/
+}
+.prev-arrow::before{
+	content:"\f053";/*左矢印アイコンフォント*/
+}
+/*マウスオーバーで矢印が水色へ*/
+.slide-arrow:hover::before{
+	color:#11cfff;
+}
+/*==// ここからdots //==*/
+.slick-dots{
+	/*画像の下部へ配置*/
+	position:absolute;
+	bottom:0;
+	z-index:100;
+}
+.slick-dots li button:before{
+	color:#fff;
+	opacity:1;
+}
+.slick-dots li.slick-active button:before{ color:#11cfff; opacity:1; }
+    </style>
+<body>
+
+    <main>
+		<div>
+			<ul class="slider">
+				<li><img src="assets/img/upload/AidanHutchinson-20220416-rs.jpg" alt="フランス"></li>
+				<li><img src="assets/img/upload/GarrettWilson-20220416-rs.jpg" alt="イギリス"></li>
+				<li><img src="assets/img/upload/mockdraft2022-20220416.jpg" alt="花火"></li>
+			</ul>
+			<section>
+				<h2>旅行に行きたい</h2>
+				<p>近場でいいから旅行に行きたい</p>
+			</section>
+		</div>
+	</main>
+    <script type="text/javascript">
+        $(function(){
+            $('.slider').slick({
+                autoplay:true,//自動再生する
+                autoplaySpeed:4000,//自動再生するスピード 4秒
+                dots:true,//ドット部分を表示する
+                infinite:true,//無限にスライドする
+                fade:true,//フェードする
+                speed:500,//フェードするスピード 0.5秒
+                prevArrow:'<p class="slide-arrow prev-arrow"></p>',//矢印左
+                nextArrow:'<p class="slide-arrow next-arrow"></p>'//矢印右
+            });
+        });
+        </script>
+</body>
+</html>

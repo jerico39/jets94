@@ -1,0 +1,113 @@
+/* project-blogparts*/
+
+/*Amazonranklet*/
+.amazonranklet-item{
+margin:5px 5px 10px 5px;
+border-bottom: 1px solid #e8e8e8;
+}
+
+
+/*------------------------------------------------------------
+ ライン風の吹き出し(function.phpにショートコード記載)
+-------------------------------------------------------------*/
+.balloon {
+	margin-bottom: 40px;
+}
+.balloon figure {
+	width: 60px;
+	height: 60px;
+}
+.balloon-img-left {
+	float: left;
+}
+.balloon-img-right {
+	float: right;
+}
+.balloon-img-left figure {
+	margin: 0 auto 0 0;
+}
+.balloon-img-right figure {
+	margin: 0 0 0 auto;
+}
+.balloon img {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+.balloon-img-caption {
+	padding: 5px 0 0;
+	white-space: nowrap;
+	//font-size: 12px;
+}
+div[class^="balloon-"] {
+	padding: 10px;
+	position: relative;
+	border-radius: 12px;
+}
+div[class^="balloon-img"] {
+	padding: 0;
+	text-align: center;
+}
+div[class^="balloon-left"] {
+	margin-left: 80px;
+}
+div[class^="balloon-right"] {
+	margin-right: 80px;
+}
+.balloon p {
+	margin: 0 0 20px;
+}
+.balloon p:last-child {
+	margin-bottom: 0;
+}
+div[class^="balloon-left-"]::before,
+div[class^="balloon-right-"]::before,
+div[class^="balloon-left-"]::after,
+div[class^="balloon-right-"]::after {
+	position: absolute;
+	content: '';
+	border: 10px solid transparent;
+	top: 12px;
+}
+div[class^="balloon-left-"]::before,
+div[class^="balloon-left-"]::after {
+	left: -20px;
+}
+div[class^="balloon-right-"]::before,
+div[class^="balloon-right-"]::after {
+	right: -20px;
+}
+div.balloon::after, div.balloon::before {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+/* 吹き出しの背景色 (左) */
+div.balloon-left-line {
+	background: #e4e8eb;
+}
+div.balloon-left-line::before,
+div.balloon-left-line::after {
+	border-right: 12px solid #e4e8eb;
+}
+
+/* 吹き出しの背景色 (右) */
+div.balloon-right-line {
+	background: #bef18c;
+}
+div.balloon-right-line::before,
+div.balloon-right-line::after {
+	border-left: 12px solid #bef18c;
+}
+
+
+
+/* スマホ用/576x以上(col-sm )*/
+@media (min-width: 576px) {
+
+}
+/* 768px以上(スマホ以外表示)*/
+@media (min-width: 768px) {
+
+}

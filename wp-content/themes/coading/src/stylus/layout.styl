@@ -1,0 +1,312 @@
+base-color = #115740
+second-color = #108f62
+list-line-color = #e8e8e8
+
+
+body
+    font-family: 'Noto Sans JP',YuGothic, "游ゴシック", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, Sans-Serif;
+dl, h1, h2, h3, h4, h5, h6, hr, legend, ol, p, ul
+    margin-bottom: 0px;
+
+
+section
+    box-sizing border-box
+    margin 40px 0px 40px 0px
+
+.container
+    padding 50px 15px 10px 15px
+    background #fff
+    width 95%
+    margin-right auto
+    margin-left auto
+ul
+    padding-left 20px
+li
+    list-style none
+    margin 3px
+
+ul.snsbtn
+    display flex
+    .txt
+      font-size 50%
+      vertical-align middle
+img
+
+    height auto
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+img.max-width
+    max-width: 100%;
+.meta
+    display block
+    a
+        color #fff
+        border-radius 4px
+        font-size 12px
+        line-height 1em
+        margin-top 3px
+        margin-left 1px
+        padding 8px
+        text-decoration  none
+    .cate
+        display flex
+    .cate>a
+        background #6F885A
+    .tag
+        display flex
+    .tag>a 
+        background #84a999
+ul.list
+    li
+        margin: 10px 0px 10px 5px;
+        border-bottom: 1px solid #e8e8e8;
+.feed-source,.feed-date
+    margin 3px
+    font-size 0.5rem
+
+article
+    table
+        width: 100%;
+        th, td
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+            line-height: 1.5;
+            /*white-space: nowrap;*/
+        th 
+            padding: 5px;
+            font-weight: bold;
+            vertical-align: top;
+            background: #3f3f3f;
+        td
+            padding: 5px;
+            vertical-align: top;
+.clm1
+    ul
+        display flex
+
+/*
+タブ切り替え
+*/
+/*タブ切り替え全体のスタイル*/
+.tabs 
+  background-color  #fff
+  box-shadow  0 0 10px rgba(0, 0, 0, 0.2)
+  width  100%
+  margin  0 auto
+
+/*タブのスタイル*/
+.tab_item 
+  width  calc(100%/3) 
+  height  50px
+  border-bottom  3px solid second-color
+  background-color  #d9d9d9
+  line-height  50px
+  font-size  13px
+  text-align  center
+  color  #565656
+  display  block
+  float  left
+  text-align  center
+  font-weight  bold
+  transition  all 0.2s ease
+
+.tab_item hover 
+  opacity  0.75
+
+/*ラジオボタンを全て消す*/
+input[name="c-tab"] 
+  display  none
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content 
+    display  none
+    padding  10px 10px 0
+    clear  both
+    overflow  hidden
+    ul
+        padding 0px
+        li
+            a
+                font-size 80%
+
+/*選択されているタブのコンテンツのみを表示*/
+#all:checked ~ #all_content,
+#programming:checked ~ #programming_content,
+#design:checked ~ #design_content 
+  display  block
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item 
+  background-color  second-color
+  color  #fff
+/*
+end タブ切り替え
+*/
+
+/*
+吹き出し
+*/
+.balloon {
+  margin-bottom: 40px;
+}
+
+.balloon figure {
+  width: 60px;
+  height: 60px;
+}
+
+.balloon-img-left {
+  float: left;
+}
+
+.balloon-img-right {
+  float: right;
+}
+
+.balloon-img-left figure {
+  margin: 0 auto 0 0;
+}
+
+.balloon-img-right figure {
+  margin: 0 0 0 auto;
+}
+
+.balloon img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.balloon-img-caption {
+  padding: 5px 0 0;
+  white-space: nowrap;
+}
+
+div[class^=balloon-] {
+  padding: 10px;
+  position: relative;
+  border-radius: 12px;
+}
+
+div[class^=balloon-img] {
+  padding: 0;
+  text-align: center;
+}
+
+div[class^=balloon-left] {
+  margin-left: 80px;
+}
+
+div[class^=balloon-right] {
+  margin-right: 80px;
+}
+
+.balloon p {
+  margin: 0 0 20px;
+}
+
+.balloon p:last-child {
+  margin-bottom: 0;
+}
+
+div[class^=balloon-left-]::before,
+div[class^=balloon-right-]::before,
+div[class^=balloon-left-]::after,
+div[class^=balloon-right-]::after {
+  position: absolute;
+  content: "";
+  border: 10px solid transparent;
+  top: 12px;
+}
+
+div[class^=balloon-left-]::before,
+div[class^=balloon-left-]::after {
+  left: -20px;
+}
+
+div[class^=balloon-right-]::before,
+div[class^=balloon-right-]::after {
+  right: -20px;
+}
+
+div.balloon::after, div.balloon::before {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* 吹き出しの背景色 (左) */
+div.balloon-left-line {
+  background: #e4e8eb;
+}
+
+div.balloon-left-line::before,
+div.balloon-left-line::after {
+  border-right: 12px solid #e4e8eb;
+}
+
+/* 吹き出しの背景色 (右) */
+div.balloon-right-line {
+  background: #bef18c;
+}
+
+div.balloon-right-line::before,
+div.balloon-right-line::after {
+  border-left: 12px solid #bef18c;
+}
+/*
+end 吹き出し
+*/
+
+/* 768px～：タブレット
+------------------------------ */
+@media screen and (min-width: 768px) 
+    .container
+         max-width 758px
+    section.l-clm2
+        display flex
+        .sec
+            width 50%
+            margin 5px
+    section.l-clm3
+        display flex
+        .sec
+            width 33.333%
+            margin 5px
+    .l-page
+        display flex
+        .l-main
+            width 70%
+        .l-sidebar
+            width 30%
+    .tab_item 
+        font-size 15px
+
+    .tab_content 
+        ul
+            li
+                a
+                    font-size 100%
+    .feed-source,.feed-date
+        margin 5px
+        font-size 0.7rem
+/* 1080px〜：小型PC
+------------------------------ */
+@media screen and (min-width:1080px)
+    .container
+         max-width 980px
+  
+/* 1280px〜：大型PC
+------------------------------ */
+@media screen and (min-width:1280px)
+    .container
+        max-width 1180px
+
+/* 1600px〜：超大型PC
+------------------------------ */
+@media screen and (min-width:1600px)
+    .container
+        max-width 1300px

@@ -1,0 +1,24 @@
+/* util _design.css
+*/
+
+.u-clear, .u-clearfix::before {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+
+.u-clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.u-margin-auto{margin-left:quto;margin-right: auto;}
+.u-center{text-align:center;}
+.u-left{text-align: left;}
+.u-right{text-align: right;}
+.u-w300{width: 300px;}
+/* d */;

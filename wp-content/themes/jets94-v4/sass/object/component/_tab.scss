@@ -1,0 +1,75 @@
+/* compornent_tab
+画像配置等
+*/
+
+/*タブ-home_more-news*/
+/*選択されているタブのスタイルを変える*/
+.c-tabs input:checked + .c-tab_item {
+  background-color: #3DB846;
+  color: #fff;
+}
+
+/*タブのスタイル*/
+.c-tab_item {
+  height: 50px;
+  border-bottom: 3px solid #3DB846;
+  background-color: #d9d9d9;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+.c-tab_item--morenews,.c-tab_item--ranking{
+    width: calc(100%/2); /* タブの数 */
+}
+
+.c-tab_item--3tab{
+    width: calc(100%/3); /* タブの数 */
+    font-size: 1.2rem;
+}
+
+
+.c-tab_item:hover {
+  opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="c-tab--morenews"],input[name="c-tab--ranking"],input[name="c-tab"]  {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.c-tab_content {
+  display: none;
+  padding: 10px 10px 0;
+  clear: both;
+  overflow: hidden;
+}
+.c-tab_content--morenews {}
+/*選択されているタブのコンテンツのみを表示
+*/
+#news:checked ~ #news_content,
+#topics:checked ~ #topics_content,
+#daily:checked ~ #daily_content,
+#weekly:checked ~ #weekly_content,
+#monthly:checked ~ #monthly_content,
+#rss-japan:checked ~ #rss-japan_content,
+#rss-blog:checked ~ #rss-blog_content,
+#rss-us:checked ~ #rss-us_content{
+  display: block;
+}
+
+
+
+
+/* 768px以上(スマホ以外表示)*/
+@media (min-width: 768px) {
+  .c-tab_item--3tab{
+      font-size: 1.6rem;
+  }
+}

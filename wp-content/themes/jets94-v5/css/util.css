@@ -1,0 +1,33 @@
+.u-base-color {
+  color: #115740 !important;
+}
+.u-second-color {
+  color: #108f62 !important;
+}
+.u-list-line-color {
+  color: #e8e8e8 !important;
+}
+.u-font-bold {
+  font-weight: bold !important;
+}
+.u-text-left {
+  text-align: left !important;
+}
+.u-text-center {
+  text-align: center !important;
+}
+.u-text-right {
+  text-align: right !important;
+}
+.u-text-justify {
+  text-align: justify !important;
+  text-justify: inter-ideograph !important;
+}
+/* 768px～：タブレット
+------------------------------ */
+/* 1080px〜：小型PC
+------------------------------ */
+/* 1280px〜：大型PC
+------------------------------ */
+/* 1500px〜：超大型PC
+------------------------------ */

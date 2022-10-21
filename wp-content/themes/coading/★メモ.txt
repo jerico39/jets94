@@ -1,0 +1,11 @@
+監視、コンパイル起動
+1)node.js のプロンプトを起動
+
+cd C:\data\Dropbox\04-WP\00-WPローカル設定\jets94-v5_demo
+
+npm run dev
+
+
+
+npm run css
+→stylusをコンパイルして、テーマへ転送

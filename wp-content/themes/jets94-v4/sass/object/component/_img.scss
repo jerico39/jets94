@@ -1,0 +1,100 @@
+/* component-img
+画像配置等
+*/
+/*
+figure img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+figure:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+*/
+
+.c-trimimg--headline{
+width: 100%;
+height: 200px;
+object-fit: cover;
+object-position: 50% 50%;
+font-family: 'object-fit: cover; object-position: 50% 50%;' /*ID,Edhe対応 要JS*/
+}
+
+.c-trimimg--topics{
+width: 100%;
+height: 200px;
+object-fit: cover;
+object-position: 50% 50%;
+font-family: 'object-fit: cover; object-position: 50% 50%;' /*ID,Edhe対応 要JS*/
+}
+
+.c-trimimg-wwe_topics{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  font-family: 'object-fit: cover; object-position: 50% 50%;' /*ID,Edhe対応 要JS*/
+  }
+
+
+.c-trimimg{
+font-family: 'object-fit: cover; object-position: 50% 50%;' /*ID,Edhe対応 要JS*/
+}
+
+.c-thumbnail,.wpp-list img{
+  display: block;
+  height: auto;
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.c-thumbnail:hover,.c-bnr:hover{
+opacity: .5;
+}
+.c-thumbnail--news,.c-thumbnail--youtube,.wpp-list img{
+  float: left;
+  height: 90px;
+  width: 90px;
+  border: medium none;
+ margin: 0 5px 0 0;
+}
+
+.c-thumbnail--single{
+ text-align: center;
+  clear:both;
+  width:100%;
+}
+
+.c-bnr{
+  padding: 2px 0;
+}
+.c-thumbnail:hover{
+opacity: .5;
+}
+
+.c-bnr--full{
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.c-imgbox{position: relative;}
+
+/* 768px以上(スマホ以外表示)*/
+@media (min-width: 768px) {
+
+
+  .c-trimimg--headline{
+  height: 460px;
+}
+.c-trimimg--topics{
+height: 270px;
+}
+
+.c-trimimg--wwe_topics{
+  height: 230px;
+  }
+}

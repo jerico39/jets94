@@ -1,0 +1,30 @@
+/*
+project/footer
+*/
+
+#tab a {
+    color: #fff;
+}
+.p-tagcloud--home {
+    margin: 5px;
+}
+.st-tags {
+    background: #3b94d9 none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1em;
+    margin-top: 3px;
+    padding: 8px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.st-tags a {
+    color: #fff;
+    text-decoration: none;
+}
+.st-tags a:hover {
+    background: #f9d635 none repeat scroll 0 0;
+    color: #278a71;
+}

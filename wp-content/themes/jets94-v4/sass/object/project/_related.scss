@@ -1,0 +1,89 @@
+/* project _related(関連記事のプラグイン用)
+*/
+.wp_rp_wrap .related_post_title {
+    clear: both;
+}
+div.wp_rp_content {
+    display: inline-block !important;
+}
+div.wp_rp_footer {
+    overflow: hidden !important;
+    text-align: right !important;
+}
+div.wp_rp_footer a {
+    color: #999 !important;
+    display: inline-block !important;
+    font-size: 11px !important;
+    text-decoration: none !important;
+}
+div.wp_rp_footer a.wp_rp_edit {
+    background: #f79124 none repeat scroll 0 0 !important;
+    border-radius: 2px !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    padding: 3px 6px;
+    text-decoration: underline !important;
+}
+ul.related_post {
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+}
+ul.related_post li {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    display: inline-block !important;
+    margin: 10px 10px 10px 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    vertical-align: top !important;
+    width: 100px !important;
+}
+ul.related_post li a {
+    display: block !important;
+    font-size: 12px !important;
+    line-height: 1.5em !important;
+    margin-bottom: 5px !important;
+    position: relative !important;
+    text-decoration: none !important;
+    text-indent: 0 !important;
+}
+ul.related_post li img {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    border: medium none !important;
+    border-radius: 3px !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+    display: block !important;
+    height: 100px !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    width: 100px !important;
+}
+ul.related_post li a img.wp_rp_santa_hat {
+    display: none !important;
+}
+ul.related_post li small {
+    font-size: 80%;
+}
+@media screen and (max-width: 480px) {
+ul.related_post li {
+    clear: both !important;
+    display: inline-block !important;
+    width: 100px !important;
+}
+ul.related_post li a:nth-child(1) {
+    float: left !important;
+}
+ul.related_post li a:nth-child(2) {
+    font-size: 14px !important;
+}
+ul.related_post li img {
+    height: 100px !important;
+    width: 100px !important;
+}
+}
+ul.related_post li .wp_rp_category a {
+    display: inline !important;
+}

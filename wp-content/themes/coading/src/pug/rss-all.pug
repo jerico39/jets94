@@ -1,0 +1,47 @@
+- var pageTitle = 'rss-allページですよ'
+include ./_include/head
+include ./_include/header
+link(rel="stylesheet" href="assets/css/list.css")
+.container
+    .l-page
+        .l-main
+            section 
+            section
+            h1 RSS
+            .tabs
+                input(type="radio" name="c-tab" checked)#all
+                label(for="all").tab_item 総合
+                input#programming(type="radio" name="c-tab")
+                label(for="programming").tab_item プログラミング
+                input#design(type="radio" name="c-tab")
+                label.tab_item(for="design") デザイン
+                .tab_content#all_content
+                    ul.list
+                        li
+                            a(href="/" target="_blank") ああああああああああああ
+                            .feed
+                                span.feed-source -  NFL JAPAN
+                                span.feed-date 2022-05-03
+                        li
+                            a(href="/" target="_blank") ああああああああああああ
+                            .feed
+                                span.feed-source -  NFL JAPAN
+                                span.feed-date 2022-05-03
+                        li
+                            a(href="/" target="_blank") ああああああああああああ
+                            .feed
+                                span.feed-source -  NFL JAPAN
+                                span.feed-date 2022-05-03
+                .tab_content#programming_content
+
+                    
+                        p プログラミングの内容がここに入ります
+                .tab_content#design_content
+                    
+                        p デザインの内容がここに入ります
+	                
+        
+        
+        .l-sidebar              
+            include ./_include/sidebar
+include ./_include/footer

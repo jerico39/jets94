@@ -1,0 +1,287 @@
+/* project _article
+*/
+
+.p-article h1{
+    font-size: 2.0rem;
+    color: #000;
+    font-weight: 700;
+    line-height: 2.0rem;
+
+    margin: 0 0 10px 0;
+}
+
+.p-article h2{
+  /*
+  background-color: #f5f5f5;
+  color: #000;
+  border-left: 5px solid #108f62;
+  border-bottom: 3px solid #108f62;
+  */
+  background-color: #000;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.0rem;
+  width: 100%;
+  margin: 50px 0 20px 0;
+  padding: 10px;
+
+
+}
+
+.p-article h3{
+  color:#000;
+   font-size: 2.0rem;
+   font-weight: bold;
+   margin:30px 0px 20px 2px;
+   border-left: 5px solid #108f62;
+   padding: 5px 3px 5px 10px;
+ }
+
+ .p-article h4{
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin:20px 10px 20px 20px;
+  }
+
+
+.p-article h5{
+border-bottom: 0 solid;
+   border-top: 0 solid #ccc;
+   font-size: 2.0rem;
+   font-weight: bold;
+   background-color: #f5f5f5;
+   margin:5px 0px 8px 2px;
+ }
+
+ .p-article h5::first-letter {
+    color: #ff0000;
+    font-size: 200%;
+    text-shadow: 2px 3px 5px #666666;
+}
+
+.p-article p{
+  font-size: 1.6rem;
+ line-height: 2.6rem;
+margin-bottom: 2.0rem;
+letter-spacing: 0.1rem;
+}
+
+/*
+記事内のList
+*/
+.p-article--content ul{
+  padding: 1em 1em 1em 2em;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #f7f7f7 none repeat scroll 0 0;
+    border-color: #757575 #dadada #dadada;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 2px rgba(100, 100, 100, 0.3) inset;
+    clear: both;
+    color: #333;
+    list-style-position: inside;
+    margin-bottom: 2em;
+    text-align: left;
+}
+.p-article--content ul li::before {
+    color: #fc9705;
+    content: "● ";
+    position: relative;
+    right: 0.1em;
+}
+.p-article--content ul li{
+    font-size: 140%;
+    line-height: 1.9;
+    list-style: outside none none;
+    text-indent: -1em;
+}
+/*
+end.List
+*/
+
+.p-comment--post li{
+  border: 4px solid #eee;
+  padding: 1em;
+  margin: 0 0 1em;
+  list-style: none;
+}
+
+.p-comment--post .children li{
+    border: none;
+}
+
+.p-comment--author{
+  display: block;
+overflow: hidden;
+margin-bottom: 10px;
+padding: 7px;
+background-color: #f5f5f5;
+border: 4px solid #eee;
+}
+
+.p-blog_card--thumbnail {
+    float: left;
+    padding: 5px;
+}
+.p-blog_card--content {
+    margin-left: 110px;
+    line-height: 120%;
+}
+.p-blog_card--title {
+    margin-bottom: 5px;
+}
+.p-blog_card--title a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #111;
+}
+.p-blog_card--excerpt {
+    color: #333;
+    font-size: 90%;
+}
+
+.p-article img{
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+
+
+/*
+目次作成プラグイン用(プラグインのスタイルが効けば不要)
+ */
+ #toc_container li,#toc_container ul{margin:0;padding:0}#toc_container.no_bullets li,#toc_container.no_bullets ul,#toc_container.no_bullets ul li,.toc_widget_list.no_bullets,.toc_widget_list.no_bullets li{background:0 0;list-style-type:none;list-style:none}#toc_container.have_bullets li{padding-left:12px}#toc_container ul ul{margin-left:1.5em}#toc_container{background:#f9f9f9;border:1px solid #aaa;padding:10px;margin-bottom:1em;width:auto;display:table;font-size:95%}#toc_container.toc_light_blue{background:#edf6ff}#toc_container.toc_white{background:#fff}#toc_container.toc_black{background:#000}#toc_container.toc_transparent{background:none transparent}#toc_container p.toc_title{text-align:center;font-weight:700;margin:0;padding:0}#toc_container.toc_black p.toc_title{color:#aaa}#toc_container span.toc_toggle{font-weight:400;font-size:90%}#toc_container p.toc_title+ul.toc_list{margin-top:1em}.toc_wrap_left{float:left;margin-right:10px}.toc_wrap_right{float:right;margin-left:10px}#toc_container a{text-decoration:none;text-shadow:none}#toc_container a:hover{text-decoration:underline}.toc_sitemap_posts_letter{font-size:1.5em;font-style:italic}
+
+ /*-------------------------------------------*/
+ /* .comments-area
+ /*-------------------------------------------*/
+ ol.comment-list { padding: 0; margin-top: 0; }
+
+ li.comment { border: 4px solid #eee; padding: 1em; margin: 0 0 1em; list-style: none; }
+ li.comment ol.children { padding-left: 1em; }
+ li.comment ol.children li.comment { border: none; }
+
+ .comment-author { display: block; overflow: hidden; margin-bottom: 10px; padding: 7px; background-color: #f5f5f5; border: 4px solid #eee; }
+
+ .comment-meta { display: block; overflow: hidden; border-bottom: 1px solid #e5e5e5; margin-bottom: 10px; }
+
+ li.pingback { margin: 0 0 1em; list-style: none; border-bottom: 1px dotted #999; }
+
+ p.no-comments { background-color: #f3f3f3; border: 1px solid #e5e5e5; text-align: center; padding: 2em; }
+
+ .bypostauthor { color: #464646; }
+
+
+ /************************************
+ ** Youtube レスポンシブ
+ ************************************/
+ .youtube {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*ブログカード*/
+/************************************
+** ブログカードのスタイル
+************************************/
+.blog-card{
+ padding:12px;
+ margin:10px 0;
+ border:1px solid #ddd;
+ word-wrap:break-word;
+ max-width:100%;
+ width:100%;
+ border-radius:5px;
+}
+
+.blog-card-thumbnail{
+ float:left;
+ padding: 5px;
+}
+
+.blog-card-content{
+ margin-left:110px;
+ line-height:120%;
+}
+.blog-card-title{
+ margin-bottom:5px;
+}
+
+.blog-card-title a{
+ font-weight:bold;
+ text-decoration:none;
+ color:#111;
+}
+
+.blog-card-excerpt{
+ color:#333;
+ font-size:90%;
+}
+
+.blog-card-footer{
+ font-size:70%;
+ color:#777;
+ margin-top:5px;
+}
+
+.clear{
+ clear:both;
+}
+
+
+/*VS-social-buzz*/
+.va-social-buzz{
+  margin-top: 20px;
+}
+
+
+/* 768px以上(スマホ以外表示)*/
+@media (min-width: 768px) {
+  .p-article h1{
+      font-size: 3.0rem;
+      line-height: 3.0rem;
+    }
+    .p-article h2{
+      font-size: 2.7rem;
+        line-height: 3.0rem;
+    }
+    .p-article h3{
+       font-size: 2.7rem;
+     }
+
+     .p-article h4{
+        font-size: 2.5rem;
+      }
+    .p-article h5{
+       font-size: 2.5rem;
+       background-color: #f5f5f5;
+       margin:5px 0px 8px 2px;
+     }
+
+     .p-article p{
+       font-size: 2.0rem;
+      line-height: 3.0rem;
+     margin-bottom: 3.0rem;
+     }
+
+}

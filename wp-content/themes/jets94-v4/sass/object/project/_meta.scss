@@ -1,0 +1,25 @@
+/* project _meta
+*/
+.p-meta_item i{
+  width: 20px;
+padding: 3px;
+}
+
+.p-meta_item--comment{
+      display: block;
+      overflow: hidden;
+      border-bottom: 1px solid #e5e5e5;
+      margin-bottom: 10px;
+}
+
+.p-meta_list--category,.p-meta_list--tag{
+  clear: both;
+}
+
+/* 768px以上(スマホ以外表示)*/
+@media (min-width: 768px) {
+  .p-meta_item--update,.p-meta_item--comment{
+    font-size: 1.3rem;
+  }
+
+}

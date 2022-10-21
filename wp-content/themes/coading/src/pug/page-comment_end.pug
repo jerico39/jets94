@@ -1,0 +1,35 @@
+- var pageTitle = 'コメント完了'
+include ./_include/head
+include ./_include/header
+link(rel="stylesheet" href="assets/css/single.css")
+.container.single
+    .l-page
+        .l-main
+            section.ad
+            section
+                article 
+                    img(src="assets/img/upload/news01.jpg" alt="ranking")
+                    p コメントが投稿されました！ <br> (コメントは承認後に表示されます)
+                    div(style="text-align:center;")
+                        <button type="button" onclick="history.back()">前のページに戻る</button>
+
+            section.amz 
+                    ul
+                        li
+                            a(rel="/1" href="" title="タイトル1"): img(src="assets/img/upload/news01.jpg" alt="ranking")
+                        li
+                            a(rel="/1" href="" title="タイトル1"): img(src="assets/img/upload/news02.jpg" alt="ranking")
+                        li
+                            a(rel="/1" href="" title="タイトル1"): img(src="assets/img/upload/news03.jpg" alt="ranking")
+                        li
+                            a(rel="/1" href="" title="タイトル1"): img(src="assets/img/upload/news04.jpg" alt="ranking")
+                        li
+                            a(rel="/1" href="" title="タイトル1"): img(src="assets/img/upload/news05.jpg" alt="ranking")
+                        li
+                            a(rel="/1" href="" title="タイトル1"): img(src="assets/img/upload/news02.jpg" alt="ranking")   
+           
+            section.recommend 
+ 
+        .l-sidebar 
+            include ./_include/sidebar
+include ./_include/footer

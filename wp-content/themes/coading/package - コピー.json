@@ -1,0 +1,30 @@
+{
+  "name": "jpea",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"reload -b -d dest\" \"stylus -w src/stylus/ -o dest/assets/css\" \"pug src/pug --out dest --watch --pretty\"",
+    "css": "stylus -w src/stylus/ -o ../jpea/css",
+    "dev-bk": "run-s task:{pug,stylus,reload}",
+    "task:reload": "reload -b -d dest",
+    "task:pug": "pug src/pug --out dest --watch --pretty",
+    "task:stylus": "stylus -w src/stylus/style.styl -o dest/assets/css",
+    "stylus-bk": "stylus -w src/stylus/*.styl -o dest/assets/css",
+    "stylus2": "stylus -w stylus/style.styl -o ../jpea/css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "js": "uglifyjs src/js/bundle.js -c --source-map -o dest/assets/js/bundle.min.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "npm-run-all": "^4.1.5",
+    "pug-cli": "^1.0.0-alpha6",
+    "reload": "^3.0.5",
+    "stylus": "^0.54.7"
+  },
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}

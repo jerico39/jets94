@@ -1,0 +1,15 @@
+/*
+_layout header
+*/
+
+.lr-footer{
+  @include base_bgcolor;
+//background-color: #28433A;
+/* height: 500px; */
+}
+
+
+/* 768px以上(スマホ以外表示)*/
+@media (min-width: 768px) {
+
+}

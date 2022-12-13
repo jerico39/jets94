@@ -1,6 +1,7 @@
 ###www以下のwpディレクトリ(wp-adminなどと並行)に設置。テーマのみをgit連携の対象とする
 *
 !.gitignore
+!wp-config.php.docker
 !wp-content/
 wp-content/*
 !wp-content/themes/

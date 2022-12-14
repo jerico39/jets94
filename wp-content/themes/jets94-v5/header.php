@@ -33,7 +33,8 @@
         </form>
       </div>
     </div><span class="btn-gnavi" id="js-hamburger"><span></span><span></span><span></span></span>
-    <nav class="gnavi" id="js-nav"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jets94-logo-header.svg"/>
+    <nav class="gnavi" id="js-nav">
+      <a href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jets94-logo-header.svg"/></a>
       <div class="search">
         <form role="search" action="/" name="search1" method="get">
           <input type="text" id="s" type="text" value="" name="s" placeholder=""/>

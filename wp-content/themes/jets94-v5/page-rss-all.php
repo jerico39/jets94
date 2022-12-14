@@ -23,6 +23,7 @@ Template Name:page-rss-all
       </section>
       <section class="rss-all">
         <h1>NFL RSS</h1>
+        <p><a href="/youtube-all/">【NFL・アメフト系Youtube更新一覧】はこちら</a></p>
         <div class="tabs">
           <input type="radio" name="c-tab" checked id="all">
           <label class="tab_item" for="all">NFL JAPAN</label>

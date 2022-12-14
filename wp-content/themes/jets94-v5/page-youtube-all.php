@@ -23,6 +23,7 @@ Template Name:page-ranking-all
       </section>
       <section class="rss-all ">
         <h1>NFL・アメフト系Youtube更新一覧</h1>
+        <p><a href="/rss-all/">【NFL関連RSS】はこちら</a></p>
         <div class="tabs">
           <input type="radio" name="c-tab" checked id="all">
           <label class="tab_item" for="all">NFL</label>

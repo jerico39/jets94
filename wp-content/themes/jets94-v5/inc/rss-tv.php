@@ -18,7 +18,7 @@ $rss_nfl = fetch_feed(array(
 	$old2_w_title = "";
 	if (!is_wp_error( $rss_nfl ) ) :
 	    $rss_nfl->set_cache_duration(6000);
-		$rss_nfl->set_item_limit(6); //1ブログ最新の~つのみ表示
+		$rss_nfl->set_item_limit(10); //1ブログ最新の~つのみ表示
 	    $rss_nfl->init();
 	    $maxitems_nfl = $rss_nfl->get_item_quantity(200);
 	    $rss_items_nfl = $rss_nfl->get_items(0, $maxitems_nfl);

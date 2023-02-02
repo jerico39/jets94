@@ -23,8 +23,10 @@ $tw_title_encode=urlencode(get_the_title()." #nfljapan #dazn #nfl");
   <li>
   <a href="https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fjets94.com%2F" target="_blank" class=""><i class="fas fa-rss-square fa-2x"></i></a>
   </li>
+  <!--
   <li>
   <a href="/pushnews/"><i class="fa-solid fa-toggle-off fa-2x"><span class="txt">通知</span></i></a>
   </li>
+-->
 </ul>
 <?php //sns?>

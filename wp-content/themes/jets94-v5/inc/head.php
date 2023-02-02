@@ -26,7 +26,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- link(rel="stylesheet", href="https://cdn.simplecss.org/simple.min.css")-->
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/lib/simple.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/layout.css?u=22614">
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/header.css">
@@ -36,7 +36,6 @@
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.6.0.min.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/common.js?up=3434"></script>
 <?php get_template_part( 'inc/head_setpage' ) ;?>
-<!--push.js-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/lib/fontawesome-free-6.2.1-web/css/all.min.css">
 <?php wp_head();?>
 </head><body>

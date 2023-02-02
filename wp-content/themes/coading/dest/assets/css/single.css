@@ -62,8 +62,8 @@ article h5:first-letter {
   text-shadow: 2px 3px 5px #666;
 }
 article p {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   margin-bottom: 1rem;
   letter-spacing: 0.1rem;
 }

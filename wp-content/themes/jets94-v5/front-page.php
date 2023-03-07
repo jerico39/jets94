@@ -274,7 +274,11 @@
           <h4>NFL JAPAN(公式) ＆日本語関連サイト</h4><a href="https://nfljapan.com/" target="_blank">NFL Japan</a><a href="https://nfljapan.com/broadcast" target="_blank">放送予定</a><a href="https://nfljapan.com/score" target="_blank">スコア</a><a href="https://nfljapan.com/standing/division" target="_blank">順位表</a><a href="https://www.flashscore.co.jp/american-football/usa/nfl/" target="_blank">NFL 試合速報</a><a href="http://www.tsp21.com/sports/nfl/" target="_blank">TSP SPORTS -NFL-</a><a href="http://www.2nn.jp/word/NFL" target="_blank">2NN -NFL-</a>
         </li>
         <li>
-          <h4>NFLグッズ(国内)</h4><a href="http://item.rakuten.co.jp/selection-int/c/0000000108/?scid=af_pc_link_txt&amp;amp;sc2id=324676366" target="_blank">楽天・SELECTION EXPRESS</a><a href="http://item.rakuten.co.jp/selection-j/c/0000001211/?scid=af_pc_ich_link_txt&amp;amp;sc2id=194075779" target="_blank">楽天・SELECTION</a><a href="http://item.rakuten.co.jp/wss-r/c/0000000102/?scid=af_pc_ich_link_urltxt_pc&amp;amp;sc2id=167317437" target="_blank">ワールドスポーツ</a>
+          <h4>NFLグッズ(国内)</h4>
+          <a href="https://hb.afl.rakuten.co.jp/hgc/305a294f.bc7069ab.305a2950.1c09fa18/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffanatics-store%2Fc%2F0000000004%2F&link_type=text&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  >楽天・Fanatics</a>
+          <a href="http://item.rakuten.co.jp/selection-int/c/0000000108/?scid=af_pc_link_txt&amp;amp;sc2id=324676366" target="_blank">楽天・SELECTION EXPRESS</a>
+          <a href="http://item.rakuten.co.jp/selection-j/c/0000001211/?scid=af_pc_ich_link_txt&amp;amp;sc2id=194075779" target="_blank">楽天・SELECTION</a>
+          <a href="http://item.rakuten.co.jp/wss-r/c/0000000102/?scid=af_pc_ich_link_urltxt_pc&amp;amp;sc2id=167317437" target="_blank">ワールドスポーツ</a>
         </li>
         <li>
           <h4>NFL.com(英語)＆海外関連サイト</h4>

@@ -1,8 +1,8 @@
 
 <!--sidebar-->
 <section class="dazn">
-  <a href="https://prf.hn/click/camref:1101l4sPt/creativeref:1011l20497" target="_blank" rel="sponsored">
-    <img class="max-width" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/dazn_nfl-300_300.jpg">
+  <a href="https://a.r10.to/hUqfaE" target="_blank" rel="sponsored">
+    <img class="max-width" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/bnr_fanatics_300_300.jpg">
   </a>
 </section>
 <section class="ad">

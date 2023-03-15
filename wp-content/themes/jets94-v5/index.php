@@ -1,4 +1,5 @@
 <?php get_header();?>
+<?php get_template_part( 'inc/utilHtmlClass' ) ;?>
 <div class="container list">
   <div class="l-page">
     <div class="l-main">
@@ -7,6 +8,7 @@
       <?php
       $name = "";
       $cat = get_queried_object(); //検索したカテゴリ、タグ名取得
+      var_dump($cat);
       $name = $cat -> name;
       $cat_slug = $cat -> slug;
     //if(empty($name)):$name = get_search_query() ; //検索キーワード取得
@@ -21,6 +23,7 @@
       */ 
     ?>
     <h1><?php echo $name; ?></h1>
+    <!--↓Access ranking-->
     <section class="row-slider ranking">
     <div class="ttl">
       <h3>月間アクセスランキング</h3>
@@ -46,7 +49,44 @@
       </div>
     </div>
   </section>
-    <section class="list">
+  <!--↑Access ranking-->
+  <!--↓ select search-->
+  <?
+  $selectCategory = new utilHtmlClass();
+  $selectlist = "";   
+  $selectCategory->set_category_name('NEWS') ;
+  $selectCategory->selectListCategory();
+  $NewsList = $selectCategory->get_selectList();
+
+  $selectCategory->set_category_name('試合結果') ;
+  $selectCategory->selectListCategory();
+  $resultList = $selectCategory->get_selectList();
+
+  $tagList = $selectCategory->selectListTeamtag();
+
+  $raundList = $selectCategory->selectListRaundtag();
+
+ var_dump($query_string );
+
+  ?>
+    <section class="list-search">
+        <div><span class="search">NEWS</span>
+          <? echo $NewsList;?>
+        </div>
+        <div><span class="search">試合結果</span>
+          <? echo $resultList;?>
+        </div>
+        <div><span class="search">チーム</span>
+          <? echo $tagList;?>
+        </div>
+        <div><span class="search">ラウンド</span>
+          <? echo $raundList;?>
+        </div>
+      </section>
+  <!--↑ select search-->
+  <section class="list">
+
+
       <ul class="result-list">
         <?php 
         query_posts($query_string . "&post_type=post"); //検索結果は投稿のみ(ページ除外)

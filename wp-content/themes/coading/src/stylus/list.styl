@@ -2,6 +2,14 @@ base-color = #115740
 second-color = #108f62
 list-line-color = #e8e8e8
 
+
+section.list-search
+    span 
+        display: inline-block;
+        width: 70px;
+    div
+        margin-left:15px
+
 ul.result-list
     li 
         display flex
@@ -187,6 +195,11 @@ section.ranking>p
 /* 1080px〜：小型PC
 ------------------------------ */
 @media screen and (min-width:1080px)
+    section.list-search
+        display:flex
+        span 
+            display: inline-block;
+            width:initial   ;
     section.ranking>.ttl //section直下はスタイル変更
         h3
             font-size 20px;

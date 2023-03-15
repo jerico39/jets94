@@ -21,8 +21,10 @@
     <?php
     else : 
       */ 
+
+      
     ?>
-    <h1><?php echo $name; ?></h1>
+    <h1><?php echo  get_search_query(); ?></h1>
     <!--↓Access ranking-->
     <section class="row-slider ranking">
     <div class="ttl">
@@ -52,21 +54,22 @@
   <!--↑Access ranking-->
   <!--↓ select search-->
   <?
+  parse_str($query_string, $queries); //検索条件の配列化($query_string はWP変数)
   $selectCategory = new utilHtmlClass();
   $selectlist = "";   
+  $selectCategory->set_querys($queries);
   $selectCategory->set_category_name('NEWS') ;
-  $selectCategory->selectListCategory();
+  $selectCategory->selectListCategory('category_name');
   $NewsList = $selectCategory->get_selectList();
 
   $selectCategory->set_category_name('試合結果') ;
-  $selectCategory->selectListCategory();
+  $selectCategory->selectListCategory('category_name');
   $resultList = $selectCategory->get_selectList();
 
-  $tagList = $selectCategory->selectListTeamtag();
+  $tagList = $selectCategory->selectListTeamtag('tag');
 
-  $raundList = $selectCategory->selectListRaundtag();
+  $raundList = $selectCategory->selectListRaundtag('tag');
 
- var_dump($query_string );
 
   ?>
     <section class="list-search">

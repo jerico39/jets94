@@ -25,11 +25,6 @@
       parse_str($query_string, $queries); //検索条件の配列化($query_string はWP変数)
       
       //最終的には　$query_string で検索を行う。
-      echo "<br>query_string:<br>";
-      var_dump($query_string);
-      echo "<br>queries:<br>";
-      var_dump($queries);
-      echo "<br><br>";
       $selectlist = "";   
       $utilHtml->set_querys($queries);
     
@@ -82,15 +77,13 @@
 
 
 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-<input type=submit>
 
-    <section class="list-search">
-      <div><span class="search">検索  
+<section class="list-search">
+      <div><span class="search">ワード  
       <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search …', 'placeholder' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
         </span>
       </div>
     </section>
-
     <section class="list-search">
         <div><span class="search">NEWS</span>
           <? echo $NewsList;?>
@@ -101,10 +94,15 @@
         <div><span class="search">チーム</span>
           <? echo $tagList;?>
         </div>
-        <div><span class="search">ラウンド</span>
+        <div><span class="search">主なタグ</span>
           <? echo $raundList;?>
         </div>
       </section>
+      <section class="list-search">
+      <div id="search">
+        <input type=submit value="検索">
+      </div>
+    </section>
   <!--↑ select search-->
   <section class="list">
   </form >

@@ -8,21 +8,46 @@
       <?php
       $name = "";
       $cat = get_queried_object(); //検索したカテゴリ、タグ名取得
-      var_dump($cat);
-      $name = $cat -> name;
-      $cat_slug = $cat -> slug;
-    //if(empty($name)):$name = get_search_query() ; //検索キーワード取得
+      $cat_id = $cat -> term_id;
 
-    $name = (empty($name)) ? get_search_query() : $name;
-    /*
-    if(empty( $name) ) :  // 検索キーワードが無い時
-     ?>
-      <div class="noresult"><p>検索キーワードが未入力です。</p></div>
-    <?php
-    else : 
-      */ 
-
+      if(!empty($cat_id)) $query_string .= "&cat=".$cat_id;
+   
+     
+      $utilHtml = new utilHtmlClass();
+    
+      $ary_name=['cat1','cat2'];
+      $query_string .= $utilHtml->get_query_union('cat',$ary_name);
+     
+      $ary_name=['tag1','tag2'];
+      $query_string .= $utilHtml->get_query_union('tag',$ary_name);
       
+    
+      parse_str($query_string, $queries); //検索条件の配列化($query_string はWP変数)
+      
+      //最終的には　$query_string で検索を行う。
+      echo "<br>query_string:<br>";
+      var_dump($query_string);
+      echo "<br>queries:<br>";
+      var_dump($queries);
+      echo "<br><br>";
+      $selectlist = "";   
+      $utilHtml->set_querys($queries);
+    
+      $utilHtml->set_category_name('NEWS','cat1','cat') ;
+      $utilHtml->selectListCategory();
+      $NewsList = $utilHtml->get_selectList();
+    
+
+      $utilHtml->set_category_name('試合結果','cat2','cat') ;
+      $utilHtml->selectListCategory();
+      $resultList = $utilHtml->get_selectList();
+    
+
+      $tagList = $utilHtml->selectListTeamtag('tag1','tag');
+    
+      $raundList = $utilHtml->selectListRaundtag('tag2','tag');
+    
+    
     ?>
     <h1><?php echo  get_search_query(); ?></h1>
     <!--↓Access ranking-->
@@ -52,26 +77,20 @@
     </div>
   </section>
   <!--↑Access ranking-->
-  <!--↓ select search-->
-  <?
-  parse_str($query_string, $queries); //検索条件の配列化($query_string はWP変数)
-  $selectCategory = new utilHtmlClass();
-  $selectlist = "";   
-  $selectCategory->set_querys($queries);
-  $selectCategory->set_category_name('NEWS') ;
-  $selectCategory->selectListCategory('category_name');
-  $NewsList = $selectCategory->get_selectList();
-
-  $selectCategory->set_category_name('試合結果') ;
-  $selectCategory->selectListCategory('category_name');
-  $resultList = $selectCategory->get_selectList();
-
-  $tagList = $selectCategory->selectListTeamtag('tag');
-
-  $raundList = $selectCategory->selectListRaundtag('tag');
+ 
 
 
-  ?>
+
+<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+<input type=submit>
+
+    <section class="list-search">
+      <div><span class="search">検索  
+      <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search …', 'placeholder' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+        </span>
+      </div>
+    </section>
+
     <section class="list-search">
         <div><span class="search">NEWS</span>
           <? echo $NewsList;?>
@@ -88,7 +107,7 @@
       </section>
   <!--↑ select search-->
   <section class="list">
-
+  </form >
 
       <ul class="result-list">
         <?php 

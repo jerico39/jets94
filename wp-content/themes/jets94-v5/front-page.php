@@ -41,20 +41,39 @@
           <?php endwhile;
            endif; ?>
       </div>
-      <div class="topics" > 
-          <!-- ad jets94-top-row01 -->
-          <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-1827178535199750"
-          data-ad-slot="2449389938"
-          data-ad-format="auto"
-          data-full-width-responsive="true"></ins>
-          <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-          <!--//ad -->
-      </div>
        <!--//Topics-->
+      <!-- jets94-top-row01
+      <div class="topics" > 
+
+      <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-1827178535199750"
+      data-ad-slot="2449389938"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      </div>
+       jets94-top-row01-->
+      
+
+
+      <!--random_bnr-->
+      <div class="">
+        <script >
+        var imglist = new Array(
+        "dazn_nfl-380_250-01.jpg",
+        "dazn_nfl-380_250-02.jpg",
+        "dazn_nfl-380_250-03.jpg"
+        );
+        var selectnum = Math.floor(Math.random() * imglist.length);
+        var output = "<a style='' href='https://prf.hn/click/camref:1101l4sPt/creativeref:1011l20497' rel='sponsored' target='dazn'><img src='<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/" + imglist[selectnum] + "' style='width:100%;height:auto;margin:auto;display: block;'></a>";
+        document.write(output);
+        </script>
+      </div>
+      <!--//random_bnr-->
+
        <!--
       <div class="nextevent">
         <p>NEXT EVENT</p>
@@ -76,6 +95,7 @@
       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
     <!--//ad -->
+
   </section>
   <section class="row-slider ranking">
     <div class="ttl">

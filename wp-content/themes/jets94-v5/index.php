@@ -8,19 +8,25 @@
       <?php
       $name = "";
       $cat = get_queried_object(); //検索したカテゴリ、タグ名取得
-      $cat_id = $cat -> term_id;
 
-      if(!empty($cat_id)) $query_string .= "&cat=".$cat_id;
+
+      $taxonomy = $cat -> taxonomy;
+      $cat_id = $cat -> term_id;
+      $slug = $cat -> slug;
    
-     
+
+      if(!empty($cat_id) && $taxonomy == 'category') $query_string .= "&cat=".$cat_id;
+      if(!empty($slug) && $taxonomy == 'post_tag') $query_string .= "&tag=".$slug;
+
       $utilHtml = new utilHtmlClass();
     
+      if($query_string)
+      $ary_name=array();
       $ary_name=['cat1','cat2'];
-      $query_string .= $utilHtml->get_query_union('cat',$ary_name);
+      $query_string = $utilHtml->get_query_union($query_string,'cat',$ary_name);
      
       $ary_name=['tag1','tag2'];
-      $query_string .= $utilHtml->get_query_union('tag',$ary_name);
-      
+      $query_string = $utilHtml->get_query_union($query_string,'tag',$ary_name);
     
       parse_str($query_string, $queries); //検索条件の配列化($query_string はWP変数)
       
@@ -44,7 +50,7 @@
     
     
     ?>
-    <h1><?php echo  get_search_query(); ?></h1>
+    <h1>検索結果</h1>
     <!--↓Access ranking-->
     <section class="row-slider ranking">
     <div class="ttl">

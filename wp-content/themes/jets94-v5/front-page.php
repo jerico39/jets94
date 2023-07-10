@@ -63,9 +63,12 @@
       <div class="">
         <script >
         var imglist = new Array(
-        "dazn_nfl-380_250-01.jpg",
+        "dazn_nfl-380_250-06.jpg",
+        "dazn_nfl-380_250-05.jpg",
+        "dazn_nfl-380_250-04.jpg",
+        "dazn_nfl-380_250-03.jpg",
         "dazn_nfl-380_250-02.jpg",
-        "dazn_nfl-380_250-03.jpg"
+        "dazn_nfl-380_250-01.jpg"
         );
         var selectnum = Math.floor(Math.random() * imglist.length);
         var output = "<a style='' href='https://prf.hn/click/camref:1101l4sPt/creativeref:1011l20497' rel='sponsored' target='dazn'><img src='<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/" + imglist[selectnum] + "' style='width:100%;height:auto;margin:auto;display: block;'></a>";

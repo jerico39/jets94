@@ -24,7 +24,7 @@ $(function(){
 //header アコーディオン(スマホのみ)
 $(function() {
   setAccordion();
-  if (window.matchMedia('(max-width:768px)').matches) {
+  if (window.matchMedia('(max-width:1080px)').matches) {
     //SP初期は速報リンクのオープン
     $('.def').next('nav.gnavi ul.small-list').slideToggle();
     $('.def').toggleClass("open");
@@ -32,15 +32,13 @@ $(function() {
   }
 });
   //$(window).on("load orientationchange resize",function(){
-  
-  $(window).on("orientationchange",function(){ //画面回転とリサイズで再ロード
+  $(window).on("orientationchange resize",function(){ //画面回転とリサイズで再ロード
       location.reload(); 
   });
 
-
   function setAccordion(){
-    //768px以下の処理
-      if (window.matchMedia('(max-width:768px)').matches) {
+    //1080px以下の処理
+      if (window.matchMedia('(max-width:1080px)').matches) {
         $('nav.gnavi ul.accordion>li').click(function(){
           $(this).next('nav.gnavi ul.small-list').slideToggle();
           $(this).toggleClass("open");
@@ -48,7 +46,7 @@ $(function() {
           $('nav.gnavi ul.accordion>li').not($(this)).removeClass("open");
         });
       }
-      //end 768px以下の処理
+      //end 1080px以下の処理
     }
   // end header アコーディオン
 
@@ -56,11 +54,20 @@ $(function() {
 
 //ロード
 window.onload = function() {
+  //パラメタからtabのチェック
+  var obj2 = document.getElementsByName("c-tab")[0]; //nameの存在
+  if(obj2){
+  var n = parseInt(window.location.search.substr(1));
+  document.getElementsByName("c-tab")[n].checked = true;
+  }
+
+
 //読み込みが終わったらローディング非表示
   const spinner = document.getElementById('loading');
   // Add .loaded to .loading
   spinner.classList.add('loaded');
 }
+
 
 
 

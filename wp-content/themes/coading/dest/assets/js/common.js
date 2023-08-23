@@ -24,7 +24,7 @@ $(function(){
 //header アコーディオン(スマホのみ)
 $(function() {
   setAccordion();
-  if (window.matchMedia('(max-width:768px)').matches) {
+  if (window.matchMedia('(max-width:1080px)').matches) {
     //SP初期は速報リンクのオープン
     $('.def').next('nav.gnavi ul.small-list').slideToggle();
     $('.def').toggleClass("open");
@@ -38,7 +38,7 @@ $(function() {
 
   function setAccordion(){
     //1080px以下の処理
-      if (window.matchMedia('(max-width:768px)').matches) {
+      if (window.matchMedia('(max-width:1080px)').matches) {
         $('nav.gnavi ul.accordion>li').click(function(){
           $(this).next('nav.gnavi ul.small-list').slideToggle();
           $(this).toggleClass("open");

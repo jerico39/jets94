@@ -382,4 +382,14 @@ add_shortcode( 'baloon-line-right', function( $atts, $content = null ) {
 	return $before . $content . $after;
 });
 
+//$strの中のhtmlタグに設定されていないURLをリンク化する関数
+function convert_string_url_to_link($str){
+	$ptn = '/([^"])(https?:\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])([^"])/imu';
+	$rep = '$1<a href="$2" target="_blank" rel="nofollow">$2</a>$3';
+	$result = preg_replace($ptn, $rep, $str, -1);
+	if($result == null) return $str;
+	return $result;
+  }
+  //上記関数をthe_contenのfilterに設定
+  add_filter('the_content', 'convert_string_url_to_link');
 ?>

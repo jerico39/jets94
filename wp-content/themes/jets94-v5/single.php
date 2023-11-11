@@ -30,24 +30,28 @@
       <?php wp_link_pages(array('before' => '<div class="page-links">','after' => '</div>','link_before' => '<span class="page-links_tp">','link_after' => '</span>','next_or_number' => 'next','nextpagelink' => __( '続きを読む &#9654;' ), 'previouspagelink' => __( '&#9664; 前のページ' ),) ); ?>
       <?php wp_link_pages(array('before' => '<div class="page-links">','after' => '</div>','link_before' => '<span class="page-links_t">','link_after' => '</span>', ) ); ?>
       
-      </section>
-      <section class="dazn">
-        <a href="https://prf.hn/click/camref:1101l4sPt/creativeref:1011l20497" target="_blank" rel="sponsored">
-        <img class="max-width" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/dazn_nfl-500_100-02.jpg">
-        </a>
-      </section>
-      <section class="dazn">
-        <a href="https://a.r10.to/hUqfaE" target="_blank" rel="sponsored">
-        <img class="max-width" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/bnr_fanatics_500_100.jpg">
-        </a>
-      </section>
+      <section class="recommend">
+          <?php /*Adwards関連記事(GoogleADのJSへのリンクはヘッダーに統一)*/ ?>
+          <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-format="autorelaxed"
+          data-ad-client="ca-pub-1827178535199750"
+          data-ad-slot="7337777787"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </section>
 
 
-      <section class="amz">
+        <section class="amz">
         <ul>
           <?php get_template_part( 'inc/amazon-box4'); ?>
         </ul>
       </section>
+
+
+
+
       <section class="nextpage">
         <?php
           $max_length   = 30;
@@ -93,18 +97,19 @@
         </ul>
        
         </section>
-
-        <section class="recommend">
-          <?php /*Adwards関連記事(GoogleADのJSへのリンクはヘッダーに統一)*/ ?>
-          <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-format="autorelaxed"
-          data-ad-client="ca-pub-1827178535199750"
-          data-ad-slot="7337777787"></ins>
-          <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
         </section>
+      <section class="dazn">
+        <a href="https://prf.hn/click/camref:1101l4sPt/creativeref:1011l20497" target="_blank" rel="sponsored">
+        <img class="max-width" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/dazn_nfl-500_100-02.jpg">
+        </a>
+      </section>
+      <section class="dazn">
+        <a href="https://a.r10.to/hUqfaE" target="_blank" rel="sponsored">
+        <img class="max-width" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/bnr_fanatics_500_100.jpg">
+        </a>
+      </section>
+
+
         <section class="comment"> 
           <?php comments_template('', true); ?>
         </section>

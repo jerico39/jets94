@@ -41,18 +41,7 @@
           (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
         </section>
-
-
-        <section class="amz">
-        <ul>
-          <?php get_template_part( 'inc/amazon-box4'); ?>
-        </ul>
-      </section>
-
-
-
-
-      <section class="nextpage">
+        <section class="nextpage">
         <?php
           $max_length   = 30;
           $trim_marker  = '...';
@@ -97,6 +86,17 @@
         </ul>
        
         </section>
+
+        <section class="amz">
+        <ul>
+          <?php get_template_part( 'inc/amazon-box4'); ?>
+        </ul>
+      </section>
+
+
+
+
+
         </section>
       <section class="dazn">
         <a href="https://prf.hn/click/camref:1101l4sPt/creativeref:1011l20497" target="_blank" rel="sponsored">

@@ -1,10 +1,5 @@
 
 <!--sidebar-->
-<section class="dazn">
-  <a href="https://a.r10.to/hUqfaE" target="_blank" rel="sponsored">
-    <img class="max-width" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/bnr_fanatics_300_300.jpg">
-  </a>
-</section>
 <section class="ad">
   	<!-- jets94-sidebar-300_600 -->
 	<ins class="adsbygoogle"

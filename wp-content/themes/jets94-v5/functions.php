@@ -315,7 +315,7 @@ function custom_youtube_oembed($code){
     $html = preg_replace("@src=(['\"])?([^'\">\s]*)@", "src=$1$2&showinfo=0&rel=0", $code);
     $html = preg_replace('/ width="\d+"/', '', $html);
     $html = preg_replace('/ height="\d+"/', '', $html);
-    $html = '<div class="youtube">' . $html . '</div>';
+    $html = '<div class="youtube_container">' . $html . '</div>';
     return $html;
   }
   return $code;

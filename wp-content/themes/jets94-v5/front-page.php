@@ -163,35 +163,7 @@
     </div>
   </section>
 
-  <section class="l-clm2">
-    <div class="sec">
-      <div class="ttl">
-        <h3>海外ニュースRSS</h3>
-        <p><a href="/rss-all/?2">【一覧へ】</a></p>
-      </div>
-      <?php
-      $set_rss_code = "";
-      $set_rss_code = get_ini('rss.ini','NEWS_US');
-      wprss_display_feed_items( $args = array(
-      'links_before' => '<ul class="list">',
-      'links_after' => '</ul>',
-      'link_before' => '<li>',
-      'link_after' => '</li>',
-      'limit' => '6',
-      'source' => $set_rss_code
-      ));
-      ?>
-    </div>
-    <div class="sec">
-      <div class="ttl">
-        <h3>関連TV RSS</h3>
-        <p><a href="/dazn/">【DAZN番組表はこちら】</a></p>
-      </div>
-      <ul class="list">
-      <?php include('inc/rss-tv.php'); ?>
-      </ul>
-    </div>
-  </section>
+
   <section class="l-clm3">
     <div class="sec">
       <div class="ttl">

@@ -48,7 +48,7 @@
         </li>
       </ul>
       <ul class="accordion">       
-        <li class="_def">
+        <li class="def">
           <p>メインメニュー</p>
           <div class="i_box"><i class="one_i"></i></div>
         </li>

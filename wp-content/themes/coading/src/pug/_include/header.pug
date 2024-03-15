@@ -9,9 +9,9 @@ header
                 a(rel="" href="/" title="タイトル1"): img(src="assets/img/jets94-logo-header.svg")
             .header-menu
                 ul
-                    li: a(href="/rss-all/") 試合結果
-                    li: a(href="/article-all/") ニュース一覧
                     li: a(href="/category/result-all/") NFLブログ更新情報
+                    li: a(href="/article-all/") ニュース一覧
+                    li: a(href="/rss-all/") 試合結果
                     li: a(href="/wwe/") WWEYoutube
                     li: a(href="/wwe/") WWEの森
 
@@ -44,6 +44,16 @@ header
             ul.accordion.empty  <!--メニューがズレるので必要-->
                 li
                     p &nbsp;
+                    
+            ul.accordion        
+                li.def
+                    p メインメニュー
+                    div.i_box: i.one_i
+                ul.small-list
+                    li: a(href="/rss-all/") NFL応援RSS
+                    li: a(href="/article-all/") ニュース一覧
+                    li: a(href="/category/result-all/") 試合結果
+                    li: a(href="/wwe/") WWEの森
             ul.accordion
                 li
                     p 速報リンク
@@ -54,16 +64,7 @@ header
                     li: a(href="https://nfljapan.com/standing/division" target="_blank") 順位表(NFL JAPAN) 
                     li: a(href="https://www.youtube.com/user/NFL" target="_blank") Youtube(NFLハイライトなど)
                     li: a(href="http://www.tsp21.com/sports/nfl/" target="_blank") TSP SPORTS -NFL-
-                    
-            ul.accordion        
-                li
-                    p メインメニュー
-                    div.i_box: i.one_i
-                ul.small-list
-                    li: a(href="/rss-all/") NFL応援RSS
-                    li: a(href="/article-all/") ニュース一覧
-                    li: a(href="/category/result-all/") 試合結果
-                    li: a(href="/wwe/") WWEの森
+
             ul.accordion        
                 li
                     p オリジナルコンテンツ

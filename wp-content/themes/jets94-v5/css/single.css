@@ -307,14 +307,12 @@ table.csv2table-table {
   .l-sidebar {
     padding-left: 10px;
   }
-
-  /* Youtube動画をレスポンシブ対応 */
+}
+/* Youtube動画をレスポンシブ対応 */
 .youtube_container iframe {
   width: 640px;
   height: 360px;
 }
-}
-
 /* 1080px〜：小型PC
 ------------------------------ */
 /* 1280px〜：大型PC

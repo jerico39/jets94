@@ -89,7 +89,7 @@
           <li><a href="/superbowl-what/">スーパーボウルとは？</a></li>
           <li><a href="/nfl-word/">アメフト用語集</a></li>
           <li><a href="/penalty/">NFL反則集</a></li>
-          <li><a href="/#link-croud">役に立つリンク集</a></li>
+          <li ><a href="/#link-croud" class="linkon">役に立つリンク集</a></li>
           <li><a href="/ranking/">アクセスランキング</a></li>
         </ul>
       </ul>

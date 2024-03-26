@@ -34,7 +34,7 @@
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/footer.css">
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/util.css">
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.6.0.min.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/common.js?up=3434"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/common.js?up=0327"></script>
 <?php get_template_part( 'inc/head_setpage' ) ;?>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/lib/fontawesome-free-6.2.1-web/css/all.min.css">
 <?php wp_head();?>

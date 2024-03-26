@@ -9,8 +9,10 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-//ハンバーガーメニュー
-$(function(){
+
+$(function () {
+  
+    //ハンバーガーメニュー
     const ham = $('#js-hamburger');
     const nav = $('#js-nav');
 
@@ -22,21 +24,20 @@ $(function(){
       $(".linkon").on("click", function() {
         ham.toggleClass('active'); // ハンバーガーメニューにactiveクラスを付け外し
         nav.toggleClass('active'); // ナビゲーションメニューにactiveクラスを付け外し
-    })
+      })
+    // end ハンバーガーメニュー    
   
+      //header アコーディオン(スマホのみ)
+      setAccordion();
+      if (window.matchMedia('(max-width:1080px)').matches) {
+        //SP初期は速報リンクのオープン
+        $('.def').next('nav.gnavi ul.small-list').slideToggle();
+        $('.def').toggleClass("open");
+        $('nav.gnavi ul.accordion>li.def').addClass("open");
+      }
 });
-// end ハンバーガーメニュー
 
-//header アコーディオン(スマホのみ)
-$(function() {
-  setAccordion();
-  if (window.matchMedia('(max-width:1080px)').matches) {
-    //SP初期は速報リンクのオープン
-    $('.def').next('nav.gnavi ul.small-list').slideToggle();
-    $('.def').toggleClass("open");
-    $('nav.gnavi ul.accordion>li.def').addClass("open");
-  }
-});
+
   //$(window).on("load orientationchange resize",function(){
   
   $(window).on("orientationchange",function(){ //画面回転とリサイズで再ロード

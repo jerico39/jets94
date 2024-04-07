@@ -131,7 +131,7 @@
     <div class="inner">
       <div class="lineup">
         <ul class="lineup-carousel top10">
-          <?php get_template_part( 'inc/amazon-box4'); ?>
+          <?php echo amazon_box("top_clm") ?>
         </ul>
       </div>
     </div>

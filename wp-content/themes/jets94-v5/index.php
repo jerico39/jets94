@@ -106,7 +106,7 @@
       </section>
       <section class="list-search">
       <div id="search">
-        <input type=submit value="検索">
+        <input type=submit value="検索" class="u-button-search">
       </div>
     </section>
   <!--↑ select search-->

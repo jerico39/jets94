@@ -1,5 +1,10 @@
 
 <!--sidebar-->
+<section class="amz-sidebar">
+  <ul>
+    <?php echo amazon_box("side_01") ?>
+  </ul>
+</section>  
 <section class="ad">
   	<!-- jets94-sidebar-300_600 -->
 	<ins class="adsbygoogle"
@@ -58,7 +63,7 @@
 </section>
 <section class="amz-sidebar">
   <ul>
-    <?php get_template_part( 'inc/amazon-sidebar'); ?>
+    <?php echo amazon_box("side_02") ?>
   </ul>
 </section>
 <section class="ad">

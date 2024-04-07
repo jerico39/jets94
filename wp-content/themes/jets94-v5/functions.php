@@ -381,6 +381,7 @@ add_shortcode( 'baloon-line-right', function( $atts, $content = null ) {
 
 	return $before . $content . $after;
 });
-
+//Amazonリンク用Function
+include('inc/amazon-link.php');
 
 ?>

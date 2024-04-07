@@ -89,7 +89,7 @@
 
         <section class="amz">
         <ul>
-          <?php get_template_part( 'inc/amazon-box4'); ?>
+        <?php echo amazon_box("single_under") ?>
         </ul>
       </section>
 

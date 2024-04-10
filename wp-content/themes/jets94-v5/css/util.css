@@ -26,6 +26,39 @@
   text-align: justify !important;
   text-justify: inter-ideograph !important;
 }
+.u-button-search {
+  display: inline-block;
+  border-radius: 20%;
+/* 角丸       */
+  font-size: 16pt;
+/* 文字サイズ */
+  text-align: center;
+/* 文字位置   */
+  cursor: pointer;
+/* カーソル   */
+  padding: 4px 4px;
+/* 余白       */
+  background: #030;
+/* 背景色     */
+  color: #fff;
+/* 文字色     */
+  line-height: 1em;
+/* 1行の高さ  */
+  transition: 0.3s;
+/* なめらか変化 */
+  box-shadow: 6px 6px 3px #666;
+/* 影の設定 */
+  border: 2px solid #030;
+/* 枠の指定 */
+}
+.u-button-search:hover {
+  box-shadow: none;
+/* カーソル時の影消去 */
+  color: #030;
+/* 背景色     */
+  background: #fff;
+/* 文字色     */
+}
 /* 768px～：タブレット
 ------------------------------ */
 /* 1080px〜：小型PC

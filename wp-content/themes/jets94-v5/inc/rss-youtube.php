@@ -44,7 +44,7 @@ $rss_nfl = fetch_feed($youtube_urls);
 		$parameters = str_replace("v=", "", $parameters);
 		
 	    ?>
-		<li><a target="_blank" rel="nofollow" href="<?php echo $item->get_permalink(); ?>" title='<?php echo $title_cut."(".$item->get_feed()->get_title().")"; ?>'><img src="https://i.ytimg.com/vi/<?php echo $parameters['v']; ?>/0.jpg" alt=""></a><a target="_blank" rel="/1" href="<?php echo $item->get_permalink(); ?>" title="<?php echo $title."(".$item->get_feed()->get_title().")"; ?>">
+		<li><a target="_blank" rel="nofollow" href="<?php echo $item->get_permalink(); ?>" title='<?php echo $title_cut."(".$item->get_feed()->get_title().")"; ?>'><img class="lazyload" data-src="https://i.ytimg.com/vi/<?php echo $parameters['v']; ?>/0.jpg" alt=""></a><a target="_blank" rel="/1" href="<?php echo $item->get_permalink(); ?>" title="<?php echo $title."(".$item->get_feed()->get_title().")"; ?>">
         <p><?php echo $title_cut."(".$item->get_feed()->get_title().")"; ?></p></a></li>
 	    <?php 
 		$cnt += 1;

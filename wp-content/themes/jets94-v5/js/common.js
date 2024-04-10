@@ -35,6 +35,9 @@ $(function () {
         $('.def').toggleClass("open");
         $('nav.gnavi ul.accordion>li.def').addClass("open");
       }
+  
+    //画像の遅延loadheaderのlazyload.min.js
+    $("img.lazyload").lazyload();
 });
 
 
@@ -58,7 +61,7 @@ $(function () {
       //end 1080px以下の処理
     }
   // end header アコーディオン
-
+ 
 
 
 //ロード

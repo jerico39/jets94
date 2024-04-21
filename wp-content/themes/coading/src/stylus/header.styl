@@ -302,13 +302,16 @@ responsiv
       margin 15px 0 0 0px
     .header-contents //中央揃え
       width 90%
+    .header-left
+      display flex
+      margin-right auto
     .header-menu
       display flex
       padding 15px 0 0 0
       ul
         padding 0 0 0 0px
       ul li
-        float   left
+        //float   left
         border-bottom 0px
         //  padding 5px
         text-align left
@@ -323,7 +326,7 @@ responsiv
         padding-left 10%;
         height 50%
       .btn-gnavi
-        right  150px
+        right  20px
     nav.gnavi
       padding 0 0 0 50px
       .search
@@ -371,17 +374,43 @@ responsiv
         display block
       .header-sns
         padding 15px 0 0 0
-  header
-    .header-left
-      display flex
-      margin-right auto
+      /* メニュー */
+    .header-menu
+      ul  
+        margin: 0;
+        padding: 0;
+    
+      ul  > li 
+        display: inline-block;
+        padding: 5px;
+        font-weight: bold;
+      
+      ul  > li a 
+        color: #ffffff;
+      
 
+      /* サブメニュー */
+      ul  ul
+        display: none;
+      
+      
+      ul:hover ul 
+        display: block;
+        height: auto;
+        position: absolute;
+        padding: 5px;
+        margin-left: -5px;
+      
+      ul  ul > li 
+        display: block;
+        padding: 5px;
+    
+    
     .header-right
       display flex
       margin-left auto
 
-    .btn-gnavi
-      right  20px
+
 /* 1280px〜：大型PC
 ------------------------------ */
 @media screen and (min-width:1280px)

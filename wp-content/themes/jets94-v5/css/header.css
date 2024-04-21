@@ -175,6 +175,13 @@ nav.gnavi ul.accordion>li {
   padding: 10px 10px 5px 5px;
   border-bottom: 1px solid #000;
 }
+nav.gnavi ul.accordion>li.head {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+nav.gnavi ul.accordion>li.head a {
+  font-weight: bold;
+}
 nav.gnavi ul.accordion>li p {
   margin: 7px 5px 7px 10px;
 }
@@ -317,6 +324,10 @@ responsiv
   header .header-contents {
     width: 90%;
   }
+  header .header-left {
+    display: flex;
+    margin-right: auto;
+  }
   header .header-menu {
     display: flex;
     padding: 15px 0 0 0;
@@ -325,7 +336,6 @@ responsiv
     padding: 0 0 0 0px;
   }
   header .header-menu ul li {
-    float: left;
     border-bottom: 0px;
     text-align: left;
     list-style-type: none;
@@ -341,10 +351,11 @@ responsiv
     height: 50%;
   }
   header .header-menu .btn-gnavi {
-    right: 150px;
+    display: none;
   }
   header nav.gnavi {
     padding: 0 0 0 50px;
+/* メニュー */
   }
   header nav.gnavi .search {
     display: none;
@@ -407,16 +418,54 @@ responsiv
   header nav.gnavi .header-sns {
     padding: 15px 0 0 0;
   }
-  header .header-left {
-    display: flex;
-    margin-right: auto;
+  header .header-menu ul {
+    margin: 0;
+    padding: 0;
+  }
+  header .header-menu ul > li {
+    display: inline-block;
+    padding: 5px;
+    font-weight: bold;
+  }
+  header .header-menu ul > li.head >a {
+    color: #fff;
+    border-style: none;
+    text-decoration: none;
+  }
+  header .header-menu ul ul {
+    display: none;
+  }
+  header .header-menu ul:hover ul {
+    display: block;
+    height: auto;
+    position: absolute;
+    padding: 5px;
+    margin-left: -5px;
+  }
+  header .header-menu ul ul > li {
+    display: block;
+    padding: 5px;
+  }
+  header .header-menu .small-list {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 4px 4px;
+  }
+  header .header-menu .small-list a {
+    color: #000;
+  }
+  header .header-menu .small-list:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 20%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-bottom: 15px solid #fff;
   }
   header .header-right {
     display: flex;
     margin-left: auto;
-  }
-  header .btn-gnavi {
-    right: 20px;
   }
 }
 /* 1280px〜：大型PC
@@ -426,7 +475,7 @@ responsiv
     width: 80%;
   }
   header .btn-gnavi {
-    left: 100px;
+    display: none;
   }
   header .header-menu a {
     font-size: 0.8rem;
@@ -440,7 +489,7 @@ responsiv
     width: 70%;
   }
   .btn-gnavi {
-    right: 300px;
+    display: none;
   }
 }
 @-moz-keyframes sk-scaleout {

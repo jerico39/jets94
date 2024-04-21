@@ -37,8 +37,6 @@ list-line-color = #e8e8e8
   visibility hidden
 
 
-
-//header
 header
   background-color  base-color  
   padding 5px 0px 0px 0px
@@ -91,9 +89,6 @@ header
     height 35px
     margin 0 0 0px -15px
 
-
-
-//
 /*　ハンバーガーボタン(sp)　*/
 header
   .btn-gnavi
@@ -174,6 +169,11 @@ nav.gnavi
   ul.accordion>li
     padding 10px 10px 5px 5px
     border-bottom 1px solid #000
+  ul.accordion>li.head
+    padding-top 10px
+    padding-bottom 10px
+    a
+      font-weight: bold
   ul.accordion>li p
     margin 7px 5px 7px 10px
   ul.small-list>li
@@ -325,8 +325,10 @@ responsiv
         white-space nowrap
         padding-left 10%;
         height 50%
+       
       .btn-gnavi
-        right  20px
+        //right  20px
+        display: none
     nav.gnavi
       padding 0 0 0 50px
       .search
@@ -385,14 +387,13 @@ responsiv
         padding: 5px;
         font-weight: bold;
       
-      ul  > li a 
-        color: #ffffff;
-      
-
+      ul  > li.head >a 
+        color #fff;
+        border-style none
+        text-decoration: none;
       /* サブメニュー */
       ul  ul
         display: none;
-      
       
       ul:hover ul 
         display: block;
@@ -404,8 +405,21 @@ responsiv
       ul  ul > li 
         display: block;
         padding: 5px;
-    
-    
+      .small-list
+        background-color #fff
+        border-radius 10px
+        box-shadow 4px 4px
+        a
+          color #000
+      .small-list:before 
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 20%;
+        margin-left: -15px;
+        border: 15px solid transparent;
+        border-bottom: 15px solid #fff;
+
     .header-right
       display flex
       margin-left auto
@@ -419,7 +433,8 @@ responsiv
         width 80%
       .btn-gnavi
         //right  90px
-        left 100px
+        //left 100px
+        display none
       .header-menu
         a 
           font-size 0.8rem;
@@ -431,5 +446,5 @@ responsiv
     header .header-contents //中央揃え
         width 70%
       .btn-gnavi
-          right  300px
-
+          //right  300px
+          display none

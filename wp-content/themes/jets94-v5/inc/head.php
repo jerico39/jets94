@@ -32,7 +32,7 @@
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/header.css?u=240422">
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/sidebar.css">
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/footer.css">
-<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/util.css">
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/util.css?=20240511">
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.6.0.min.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/common.js?up=0327"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>

@@ -11,6 +11,7 @@ if(preg_match($search1, $temp_name ) === 1){
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/js/lib/slick/slick-theme.css?u=0511">
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/js/lib/slick/slick.css?u=0511">
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/lib/slick/slick.min.js?u=0511"></script>
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/slick_cus.css?d=0612">
 <?php
  }
 if(preg_match($search2, $temp_name ) === 1){

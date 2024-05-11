@@ -88,20 +88,20 @@
           </div>
           <div class="inner">
             <div class="lineup">
-              <ul class="lineup-carousel number">
+              <ul class="lineup-carousel">
                 <?php //▼latest ?>
                 <?php $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
                 $ppp = get_option('posts_per_page');
                 $ppp=5; //出力ページ指定
                 query_posts( array(
                   'posts_per_page' => $ppp,
+                  'orderby' => 'rand',
                   'tax_query' => array( 
                     array(
                       'taxonomy'=>'post_tag',
                       'terms'=>array($ary[$key]),
                       'include_children'=>true,
                       'field'=>'slug',
-                      'orderby' => 'rand',
                       'operator'=>'IN'
                       ),
                     )

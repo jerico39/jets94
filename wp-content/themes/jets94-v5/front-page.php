@@ -225,7 +225,12 @@
       </div>
       <ul class="list">
         <li>
-          <h4>NFL JAPAN(公式) ＆日本語関連サイト</h4><a href="https://nfljapan.com/" target="_blank">NFL Japan</a><a href="https://nfljapan.com/broadcast" target="_blank">放送予定</a><a href="https://nfljapan.com/score" target="_blank">スコア</a><a href="https://nfljapan.com/standing/division" target="_blank">順位表</a><a href="https://www.flashscore.co.jp/american-football/usa/nfl/" target="_blank">NFL 試合速報</a><a href="http://www.tsp21.com/sports/nfl/" target="_blank">TSP SPORTS -NFL-</a><a href="http://www.2nn.jp/word/NFL" target="_blank">2NN -NFL-</a>
+          <h4>NFL JAPAN(公式) ＆日本語関連サイト</h4><a href="https://nfljapan.com/" target="_blank">NFL Japan</a>
+          <a href="https://nfljapan.com/broadcast" target="_blank">放送予定</a>
+          <a href="https://nfljapan.com/score" target="_blank">スコア</a>
+          <a href="https://www.flashscore.co.jp/american-football/usa/nfl/" target="_blank">NFL 試合速報</a>
+          <a href="http://www.tsp21.com/sports/nfl/" target="_blank">TSP SPORTS -NFL-</a>
+          <a href="http://www.2nn.jp/word/NFL" target="_blank">2NN -NFL-</a>
         </li>
         <li>
           <h4>NFLグッズ(国内)</h4>
@@ -237,16 +242,19 @@
         <li>
           <h4>NFL.com(英語)＆海外関連サイト</h4>
           <a href="http://www.nfl.com/" target="_blank">NFL.com</a>
-          <a href="http://www.nfl.com/scores" target="_blank">速報 Score(スコア)</a>
-          <a href="http://www.nfl.com/injuries" target="_blank">Injuries list(ケガ人)</a><a href="http://www.nfl.com/stats/team" target="_blank">Team stats(チーム別成績)</a><a href="https://www.youtube.com/user/NFL" target="_blank">Youtube NFL-ハイライト、他</a><a href="https://www.nfl.com/teams/new-york-jets/roster" target="_blank">NFL.com Roster - Jets</a><a href="http://espn.go.com/blog/new-york/jets/" target="_blank">ESPN - Jets</a><a href="http://www.profootballweekly.com/team/jets/" target="_blank">ProFootballWeekly.com-Jets</a><a href="http://www.pro-football-reference.com/teams/" target="_blank">NFL データベース</a><a href="http://bleacherreport.com/new-york-jets" target="_blank">bleacher report</a>
+          <a href="https://www.youtube.com/user/NFL" target="_blank">Youtube NFL-ハイライト、他</a>
+          <a href="http://bleacherreport.com/new-york-jets" target="_blank">bleacher report</a>
+          <a href="http://www.newyorkjets.com/" target="_blank">JETS 公式サイト</a>
         </li>
         <li>
-          <h4>JETS関連</h4><a href="/roster" target="_blank">JETS 日本語ロースター</a>
-          <a href="http://www.newyorkjets.com/" target="_blank">JETS 公式サイト</a>
-          <a href="http://www.nfl.com/teams/newyorkjets/schedule?team=nyj" target="_blank">JETS スケジュール</a>
-          <a href="http://www.spotrac.com/nfl/new-york-jets/cap/" target="_blank">JETS サラリーキャップ</a>
-          <a href="https://www.cbssports.com/nfl/teams/NYJ/new-york-jets/injuries/" target="_blank">JETS Injuries(CBS)</a>
-          <a href="https://www.teamrankings.com/nfl/team/new-york-jets" target="_blank">JETS (TEAM RANKINGS)</a>
+          <h4>データ・モックドラフト</h4>
+          <a href="http://www.pro-football-reference.com/teams/" target="_blank">PRO Football Reference</a>
+          <a href="https://www.lineups.com/nfl-team-rankings" target="_blank">NFL Team Ranking</a>
+          <a href="https://www.nfl.com/schedules/team-schedules" target="_blank">スケジュール</a>
+          <a href="http://www.spotrac.com/nfl/new-york-jets/cap/" target="_blank">サラリーキャップ</a>
+          <a href="https://www.cbssports.com/nfl/teams/NYJ/new-york-jets/injuries/" target="_blank">ケガ人(CBS)</a>
+          <a href="https://www.teamrankings.com/nfl/team/new-york-jets" target="_blank">TEAM RANKINGS(JETS)</a>
+          <a href="https://www.nflmockdraftdatabase.com/" target="_blank">モックドラフト・データベース</a>
         </li>
         <li>
           <h4>便利ツール</h4><a href="https://www.time-j.net/WorldTime/Location/America/New_York" target="_blank">時差変換[米東部＞日本]</a>
@@ -254,7 +262,12 @@
           <a href="https://ja.howtopronounce.com/" target="_blank">発音検索</a>
         </li>
         <li>
-          <h4>アメフト日本国内リーグ</h4><a href="http://amefootlive.jp/" target="_blank">American Football Live</a><a href="http://www.xleague.com/schedule/" target="_blank">Ｘリーグ 試合日程</a><a href="http://www.kcfa.jp/schedule_all/" target="_blank">関東学連 試合日程(秋季)</a><a href="http://www.kansai-football.jp/schedule/" target="_blank">関西学連 試合日程</a><a href="http://kantokoukou-football.com/cms/index.php?page_id=0" target="_blank">関東高校連盟ＨＰ</a><a href="http://www.kansaikoukou-football.com/index.html" target="_blank">関西高校連盟ＨＰ</a>
+          <h4>アメフト日本国内リーグ</h4><a href="http://amefootlive.jp/" target="_blank">American Football Live</a>
+          <a href="http://www.xleague.com/schedule/" target="_blank">Ｘリーグ 試合日程</a>
+          <a href="http://www.kcfa.jp/schedule_all/" target="_blank">関東学連 試合日程(秋季)</a>
+          <a href="http://www.kansai-football.jp/schedule/" target="_blank">関西学連 試合日程</a>
+          <a href="http://kantokoukou-football.com/cms/index.php?page_id=0" target="_blank">関東高校連盟ＨＰ</a>
+          <a href="http://www.kansaikoukou-football.com/index.html" target="_blank">関西高校連盟ＨＰ</a>
         </li>
       </ul>
     </div>

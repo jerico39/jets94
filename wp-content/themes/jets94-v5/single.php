@@ -27,21 +27,11 @@
       </article>
       <section class="pager">
      
-      <?php wp_link_pages(array('before' => '<div class="page-links">','after' => '</div>','link_before' => '<span class="page-links_tp">','link_after' => '</span>','next_or_number' => 'next','nextpagelink' => __( '続きを読む &#9654;' ), 'previouspagelink' => __( '&#9664; 前のページ' ),) ); ?>
-      <?php wp_link_pages(array('before' => '<div class="page-links">','after' => '</div>','link_before' => '<span class="page-links_t">','link_after' => '</span>', ) ); ?>
-      
-      <section class="recommend">
-          <?php /*Adwards関連記事(GoogleADのJSへのリンクはヘッダーに統一)*/ ?>
-          <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-format="autorelaxed"
-          data-ad-client="ca-pub-1827178535199750"
-          data-ad-slot="7337777787"></ins>
-          <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </section>
-        <section class="nextpage">
+        <?php wp_link_pages(array('before' => '<div class="page-links">','after' => '</div>','link_before' => '<span class="page-links_tp">','link_after' => '</span>','next_or_number' => 'next','nextpagelink' => __( '続きを読む &#9654;' ), 'previouspagelink' => __( '&#9664; 前のページ' ),) ); ?>
+        <?php wp_link_pages(array('before' => '<div class="page-links">','after' => '</div>','link_before' => '<span class="page-links_t">','link_after' => '</span>', ) ); ?>
+        
+      </section>              
+      <section class="nextpage">
         <?php
           $max_length   = 30;
           $trim_marker  = '...';
@@ -84,10 +74,57 @@
         </li>
         <?php } ?>
         </ul>
-       
-        </section>
+      </section>
+      <?php endwhile;endif;?>
 
-        <section class="amz">
+        <!-- rand tag-->
+      <section class="row-slider">
+        <?php 
+        $ary = array("そうだったのか！", "トム・ブレイディ", "スーパーボウル", "プレビュー","がっかり・オブ・ザ・イヤー");
+        $key = array_rand($ary, 1);
+        ?>
+          <div class="u-ttl">
+            <h3>注目のタグ[<?php echo $ary[$key] ?>]</h3>
+          </div>
+          <div class="inner">
+            <div class="lineup">
+              <ul class="lineup-carousel number">
+                <?php //▼latest ?>
+                <?php $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                $ppp = get_option('posts_per_page');
+                $ppp=5; //出力ページ指定
+                query_posts( array(
+                  'posts_per_page' => $ppp,
+                  'tax_query' => array( 
+                    array(
+                      'taxonomy'=>'post_tag',
+                      'terms'=>array($ary[$key]),
+                      'include_children'=>true,
+                      'field'=>'slug',
+                      'orderby' => 'rand',
+                      'operator'=>'IN'
+                      ),
+                    )
+                  )
+                );
+
+                if(have_posts()) : while(have_posts()) : the_post(); ?>
+                <?php 
+                //mb_substr(元の文字列, 開始位置, 文字数)
+                $content = mb_substr(get_the_excerpt(), 80, 80);
+                $excerpt = explode(' ',$content);
+                $post->post_title = mb_substr( $post->post_title, 0, '20'). '...'; //Title調整
+                get_template_part( 'inc/news-list');
+                ?>
+              
+                <?php endwhile; endif ?>
+              </ul>
+            </div>
+          </div>
+      </section>
+        <!-- //rand tag-->
+
+      <section class="amz">
         <ul>
         <?php echo amazon_box("single_under") ?>
         </ul>
@@ -97,25 +134,35 @@
 
 
 
-        </section>
-      <section class="dazn">
-        <a href="https://prf.hn/click/camref:1101l4sPt/creativeref:1011l20497" target="_blank" rel="sponsored">
-        <img class="max-width" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/dazn_nfl-500_100-02.jpg">
-        </a>
+       
+    <section class="dazn">
+      <a href="https://prf.hn/click/camref:1101l4sPt/creativeref:1011l20497" target="_blank" rel="sponsored">
+      <img class="max-width" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/dazn_nfl-500_100-02.jpg">
+      </a>
+    </section>
+    <section class="dazn">
+      <a href="https://a.r10.to/hUqfaE" target="_blank" rel="sponsored">
+      <img class="max-width" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/bnr_fanatics_500_100.jpg">
+      </a>
+    </section>
+    <section class="recommend">
+        <?php /*Adwards関連記事(GoogleADのJSへのリンクはヘッダーに統一)*/ ?>
+        <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-format="autorelaxed"
+        data-ad-client="ca-pub-1827178535199750"
+        data-ad-slot="7337777787"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
       </section>
-      <section class="dazn">
-        <a href="https://a.r10.to/hUqfaE" target="_blank" rel="sponsored">
-        <img class="max-width" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/bnr_fanatics_500_100.jpg">
-        </a>
-      </section>
 
+      <section class="comment"> 
+        <?php comments_template('', true); ?>
+    </section>
 
-        <section class="comment"> 
-          <?php comments_template('', true); ?>
-        </section>
-
-    </div>
-    <?php endwhile;endif;?>
+  </div>
+    
     <div class="l-sidebar"> 
       <?php get_sidebar(); ?>
     

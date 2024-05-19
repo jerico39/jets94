@@ -93,7 +93,8 @@
                 <?php $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
                 $ppp = get_option('posts_per_page');
                 $ppp=5; //出力ページ指定
-                query_posts( array(
+
+                $ary_qu = array(
                   'posts_per_page' => $ppp,
                   'orderby' => 'rand',
                   'tax_query' => array( 
@@ -105,19 +106,16 @@
                       'operator'=>'IN'
                       ),
                     )
-                  )
-                );
+                    );
 
-                if(have_posts()) : while(have_posts()) : the_post(); ?>
-                <?php 
+                $set_query = new WP_Query($ary_qu);
+                if ($set_query->have_posts()) : while ($set_query->have_posts()) : $set_query->the_post();
                 //mb_substr(元の文字列, 開始位置, 文字数)
                 $content = mb_substr(get_the_excerpt(), 80, 80);
                 $excerpt = explode(' ',$content);
                 $post->post_title = mb_substr( $post->post_title, 0, '20'). '...'; //Title調整
                 get_template_part( 'inc/news-list');
-                ?>
-              
-                <?php endwhile; endif ?>
+               endwhile; endif ;wp_reset_postdata();  ?>
               </ul>
             </div>
           </div>

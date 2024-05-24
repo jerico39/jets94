@@ -83,7 +83,7 @@
         $ary = array("そうだったのか！", "マンガ","アイシールド21", "スーパーボウル", "プレビュー","がっかり・オブ・ザ・イヤー");
         $key = array_rand($ary, 1);
         ?>
-          <div class="ttl">
+          <div class="u-ttl">
             <h3>注目のタグ[<?php echo $ary[$key] ?>]</h3>
           </div>
           <div class="inner">

@@ -62,7 +62,7 @@
   <section class="row-slider ranking">
     <div class="ttl">
       <h3>週間アクセスランキング</h3>
-      <a href="/ranking-all/">【ランキング一覧へ】</a>
+
     </div>
     <div class="inner">
       <div class="lineup">
@@ -81,6 +81,7 @@
                 'post_html' => '<li>{thumb}<p>{title}</p></li>', /*表示されるhtmlの設定（サムネイル、記事タイトル、の順で表示）*/
                 ); ?>
                 <?php wpp_get_mostpopular($wpp); ?>
+                <a href="/ranking-all/">【ランキング一覧へ】</a>
       </div>
     </div>
   </section>
@@ -110,7 +111,7 @@
     <div class="sec">
       <div class="ttl">
         <h3>NFLファンブログ RSS</h3>
-        <p><a href="/rss-all/?1">【ブログ一覧へ】</a></p>
+        
       </div>
       <?php
       $set_rss_code = "";
@@ -124,6 +125,7 @@
       'source' => $set_rss_code
       ));
       ?>
+      <p><a href="/rss-all/?1">【ブログ一覧へ】</a></p>
     </div>
   </section>
   <section class="row-slider" id="amz">
@@ -152,13 +154,14 @@
   <section class="row-slider youtube">
     <div class="ttl">
       <h3>NFL系Youtube</h3>
-      <a href="/youtube-all/">【Youtube一覧へ】</a>
+      
     </div>
     <div class="inner">
       <div class="lineup">
         <ul class="lineup-carousel top10">
         <?php include('inc/rss-youtube.php'); ?>
         </ul>
+        <a href="/youtube-all/">【Youtube一覧へ】</a>
       </div>
     </div>
   </section>

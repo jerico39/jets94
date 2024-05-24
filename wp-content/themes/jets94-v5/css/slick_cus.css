@@ -29,13 +29,13 @@
   font-weight: bold;
 }
 .lineup-carousel .next {
-  top: 30%;
+  top: -30%;
   right: 0%;
   color: #1a1a1a;
 }
 .lineup-carousel .prev {
-  top: 30%;
-  left: 0%;
+  top: -30%;
+  left: 75%;
   color: #1a1a1a;
 }
 .lineup-carousel .slick-list {
@@ -63,10 +63,10 @@
 }
 .lineup-carousel .slick-next:before,
 .lineup-carousel .slick-prev:before {
-  color: #000;
+  color: #d3d3d3;
 }
 .lineup-carousel .slick-disabled {
-  display: none !important;
+  color: #d3d3d3;
 }
 .lineup-carousel.number li::before {
   background-color: #333;

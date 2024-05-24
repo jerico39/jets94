@@ -59,6 +59,34 @@
   background: #fff;
 /* 文字色     */
 }
+.u-ttl>h4 {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-bottom: 1em;
+  color: #fff;
+  border-radius: 10px;
+  background: #1a1a1a;
+}
+.u-ttl>h4::after {
+  position: absolute;
+  content: '';
+  left: 1em;
+  bottom: -28px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #1a1a1a;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+section>.ttl h3 {
+  font-weight: 700;
+  margin: 20px 0 10px 2px;
+  border-left: 5px solid #108f62;
+  padding: 5px 3px 5px 10px;
+}
 /* 768px～：タブレット
 ------------------------------ */
 /* 1080px〜：小型PC

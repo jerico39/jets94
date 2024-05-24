@@ -80,10 +80,10 @@
         <!-- rand tag-->
       <section class="row-slider">
         <?php 
-        $ary = array("そうだったのか！", "トム・ブレイディ", "スーパーボウル", "プレビュー","がっかり・オブ・ザ・イヤー");
+        $ary = array("そうだったのか！", "マンガ","アイシールド21", "スーパーボウル", "プレビュー","がっかり・オブ・ザ・イヤー");
         $key = array_rand($ary, 1);
         ?>
-          <div class="u-ttl">
+          <div class="ttl">
             <h3>注目のタグ[<?php echo $ary[$key] ?>]</h3>
           </div>
           <div class="inner">

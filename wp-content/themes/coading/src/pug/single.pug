@@ -2,6 +2,10 @@
 include ./_include/head
 include ./_include/header
 link(rel="stylesheet" href="assets/css/single.css")
+link(rel="stylesheet",  href="assets/js/lib/slick/slick-theme.css")
+link(rel="stylesheet",  href="assets/js/lib/slick/slick.css")
+script(src="assets/js/lib/slick/slick.min.js")
+link(rel="stylesheet" href="assets/css/slick_cus.css")
 script(src="assets/js/single.js")
 .container.single
     .l-page
@@ -150,8 +154,11 @@ script(src="assets/js/single.js")
                     li.next
                         a(href="http://localhost:8010/435196/" rel="next") 次の記事へ
 
-            
             section.recommend 
+
+            section.row-slider
+                div.u-ttl
+                    h3 注目のタグ[トム・ブレイディ]
             section.comment 
                 ol.comment-list
                     li 

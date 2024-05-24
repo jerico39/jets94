@@ -46,8 +46,8 @@ $(function(){
      slidesToScroll: 1,
      infinite: false,
      arrows: true,
-     prevArrow:'<i class="prev fa fa-arrow-circle-left fa-2x" aria-hidden="true"></i>',
-     nextArrow:'<i class="next fa fa-arrow-circle-right fa-2x" aria-hidden="true"></i>',
+     prevArrow:'<i class="prev fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i>',
+     nextArrow:'<i class="next fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i>',
      responsive: [{
       breakpoint: 1080,  //ブレイクポイントを指定
       settings: {
@@ -60,8 +60,8 @@ $(function(){
      slidesToScroll: 1,
      infinite: false,
      arrows: true,
-     prevArrow:'<i class="prev fa fa-arrow-circle-left fa-2x" aria-hidden="true"></i>',
-     nextArrow:'<i class="next fa fa-arrow-circle-right fa-2x" aria-hidden="true"></i>',
+     prevArrow:'<i class="prev fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i>',
+     nextArrow:'<i class="next fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i>',
      responsive: [{
        breakpoint: 1080,  //ブレイクポイントを指定
        settings: {

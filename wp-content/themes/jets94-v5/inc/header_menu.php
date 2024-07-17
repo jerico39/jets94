@@ -57,6 +57,7 @@
         <ul class="small-list">
             <li><a href="/tag/がっかり・オブ・ザ・イヤー/">がっかり・オブ・ザ・イヤー </a></li>
             <li><a href="/tag/そうだったのか！/">そうだったのか！(NFLトリビア)</a></li>
+            <li><a href="/tag/マンガ/">マンガ</a></li>
             <li><a href="/tag/スーパーボウル/">スーパーボウル</a></li>
             <li><a href="/tag/ドラフト/">ドラフト</a></li>
             <li><a href="/tag/nflスーパースター列伝/">NFLスーパースター列伝</a></li>

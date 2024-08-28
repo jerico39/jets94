@@ -35,6 +35,8 @@ $w_update = date_format($date,'Y/m/d') ;
         <option value="RES">RES(故障者)</option>
         <option value="PUP">PUP(故障者)</option>
         <option value="RSN">RSN(故障者)</option>
+        <option value="NWT">NWT(Not With Team)</option>
+        <option value="CUT">CUT(解雇)</option>
     </select>
 
     <article> 

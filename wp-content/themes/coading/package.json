@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"reload -b -d dest\" \"stylus -w src/stylus/ -o dest/assets/css\" \"pug src/pug --out dest --watch --pretty\"",
+    "dev": "concurrently \"reload  -b -d  dest\" \"stylus -w src/stylus/ -o dest/assets/css\" \"pug src/pug --out dest --watch --pretty\"",
     "css": "stylus -w src/stylus/ -o ../jets94-v5/css",
     "dev-bk": "run-s task:{pug,stylus,reload}",
     "task:reload": "reload -b -d dest",

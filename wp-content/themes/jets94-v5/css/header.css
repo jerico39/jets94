@@ -424,7 +424,7 @@ responsiv
   }
   header .header-menu ul > li {
     display: inline-block;
-    padding: 5px;
+    padding: 5px 2px 5px 2px;
     font-weight: bold;
   }
   header .header-menu ul > li.head >a {
@@ -477,6 +477,9 @@ responsiv
   header .btn-gnavi {
     display: none;
   }
+  header .header-menu ul > li {
+    padding: 5px 2px 5px 2px;
+  }
   header .header-menu a {
     font-size: 0.8rem;
     padding: 0 0px 0 10px;
@@ -490,6 +493,9 @@ responsiv
   }
   .btn-gnavi {
     display: none;
+  }
+  .header-menu ul > li {
+    padding: 5px;
   }
 }
 @-moz-keyframes sk-scaleout {

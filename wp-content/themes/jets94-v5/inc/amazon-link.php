@@ -1,4 +1,3 @@
-
 <?php 
 function amazon_box($place){
   //検索条件

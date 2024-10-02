@@ -516,7 +516,7 @@ responsiv
 ------------------------------ */
 @media screen and (min-width: 1280px) {
   header .header-contents {
-    width: 85%;
+    width: 90%;
   }
   header .btn-gnavi {
     display: none;

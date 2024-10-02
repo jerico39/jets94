@@ -18,8 +18,10 @@ $(function(){
 function emphasisCharacter(set_a, set_b,set_body) {
   
     setreg = new RegExp("[" + set_a + set_b + "]"); //正規表現に変数を入れる
-    let separy = $('.article-body').text().split(setreg) //指定クラス内を「"」の間で区切り配列化
-
+    //let separy = $('.article-body').text().split(setreg) //指定クラス内を「"」の間で区切り配列化
+    //タグを抜いた置換対象検索用Body
+    var set_body_tmp = set_body.replace(/<("[^"]*"|'[^']*'|[^'">])*>/g, '');
+    let separy = set_body_tmp.split(setreg) //指定クラス内を「"」の間で区切り配列化
     separy_rs = [];
     cnt = 0;
     for (let i = 0; i < separy.length; i++) {

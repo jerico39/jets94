@@ -31,7 +31,7 @@
 
 
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/layout.css?u=22614">
-<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/header.css?u=240422">
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/header.css?u=241002">
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/sidebar.css">
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/footer.css">
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/util.css?u=20240524">

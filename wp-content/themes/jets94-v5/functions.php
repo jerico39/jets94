@@ -1,5 +1,4 @@
 <?php
-
 /*-------------------------------------------*/
 	/*  Title tag
 	/*-------------------------------------------*/
@@ -51,8 +50,6 @@ function my_open_graph_image_default( $image ) {
 add_filter( 'jetpack_open_graph_image_default', 'my_open_graph_image_default' );
 
 
-
-
 /* 記事ページ分割した時に、タイトルにページ数を追加（実行されない、、プラグインのせい？） */
 function theme_name_wp_title( $title ) {
 global $page, $paged;
@@ -91,7 +88,6 @@ EOF;
 
 /*adseseを記事途中にいれるショートコード*/
 function showads() {
-
 	$adTags = <<< EOF
 	<div class="l-ad l-ad-article_middle">
 	<!-- ad jets94-single-more -->
@@ -110,9 +106,6 @@ EOF;
 	return $adTags;
 }
 add_shortcode('adsense', 'showads');
-
-
-
 //CSVファイルキャッシュバスター作成
 function get_cashbaster($filename){//キャッシュバスターを作成、ファイルが存在しなければ何も返さない
 	if(file_exists( __DIR__.$filename )){
@@ -121,7 +114,6 @@ function get_cashbaster($filename){//キャッシュバスターを作成、フ�
 		return null;
 	}
   }
-
 /*iniファイルから設定取得*/
 function get_ini($ini_file,$ini_key,$section = false){
 	$ini_pass =  dirname(__DIR__)  . "\\" .  esc_html( get_stylesheet() ) ."\\ini\\". $ini_file;  //Xampp
@@ -138,8 +130,6 @@ function get_ini($ini_file,$ini_key,$section = false){
 
 	exit;
 }
-
-
 /*はてぶメール投稿*/
 function send_hatena($post_id) {
 	$post = get_post($post_id);
@@ -175,8 +165,6 @@ function comment_redirect(){
 wp_redirect('/comment_end/');
 exit();
 }
-
-
 //コメントは承認待ちメッセージの表示//使用していない？
 /*
 function my_comments_message($args) {
@@ -206,9 +194,6 @@ function redirect404() {
 		}
 	}
 }
-
-
-
 /*ブログカード
 参考：https://nelog.jp/wordpress-blog-card*/
 //100×100pxのサムネイルを作成
@@ -262,7 +247,6 @@ function url_to_blog_card($the_content) {
   return $the_content;//置換後のコンテンツを返す
 }
 add_filter('the_content','url_to_blog_card');//本文表示をフック
-
 
 /*ショートコード：シェアリンク
 [sharelink]
@@ -383,5 +367,4 @@ add_shortcode( 'baloon-line-right', function( $atts, $content = null ) {
 });
 //Amazonリンク用Function
 include('inc/amazon-link.php');
-
 ?>

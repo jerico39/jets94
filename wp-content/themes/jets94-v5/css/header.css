@@ -219,6 +219,7 @@ nav.gnavi ul.accordion>li {
 nav.gnavi ul.accordion>li.head {
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 35px;
 }
 nav.gnavi ul.accordion>li.head a {
   font-weight: bold;
@@ -282,7 +283,7 @@ nav.gnavi ul.accordion>li .i_box {
   align-items: center;
   position: absolute;
   top: 70%;
-  right: 5%;
+  left: 1%;
   width: 20px;
   height: 20px;
   border: 1px solid #000;

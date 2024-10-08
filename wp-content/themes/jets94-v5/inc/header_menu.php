@@ -4,7 +4,7 @@
         </li>
     </ul>
     <ul class="accordion">       
-        <li class="def head">
+        <li class="head">
         <a calss="head">メインメニュー</a>
             <div class="i_box"><i class="one_i"></i></div>
         </li>

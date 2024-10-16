@@ -63,31 +63,72 @@ header .header-sns a {
   margin: 0 5px;
   text-align: right;
 }
-header .header-search {
-  margin: 0 0 0 0px;
-  padding: 15px 0 0 0;
+/* 
+  .header-search
+    margin 0 0 0 0px
+    padding 15px 0 0 0
+  
+  .header-search form input[type="text"],nav.gnavi form input[type="text"]
+      width 153px
+      height 33px
+      border-radius: 0px
+      margin 0 0 0 0
+      padding 0 0 0 0
+    input[type="text"]:focus
+      outline 0
+  .header-search button,nav.gnavi button
+    border-radius 0px
+    cursor pointer
+    font-family FontAwesome
+    border none
+    outline  none
+    width 40px   
+    height 35px
+    margin 0 0 0px -15px
+*/
+.header-search {
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #999;
+  display: block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  height: 2.3em;
+  width: 265px;
+  overflow: hidden;
+  background-color: #fff;
 }
-header .header-search form input[type="text"],
-header nav.gnavi form input[type="text"] {
-  width: 153px;
-  height: 33px;
-  border-radius: 0px;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+.header-search input[type="text"] {
+  border: none;
+  height: 2em;
 }
-header input[type="text"]:focus {
+.header-search input[type="text"]:focus {
   outline: 0;
 }
-header .header-search button,
-header nav.gnavi button {
-  border-radius: 0px;
+.header-search input[type="submit"] {
   cursor: pointer;
   font-family: FontAwesome;
+  font-size: 1.3em;
   border: none;
+  background: none;
+  color: #3879d9;
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  right: 0;
+  top: -10px;
   outline: none;
-  width: 40px;
-  height: 35px;
-  margin: 0 0 0px -15px;
+  background-color: #fff;
+}
+.header-search button {
+/* 背景色を無色に */
+  background: transparent;
+/* 枠線を消す */
+  border: none;
+/* クリックした際に枠線をnone消す */
+  outline: none;
+/* 影を消す */
+  box-shadow: none;
 }
 /*　ハンバーガーボタン(sp)　*/
 header .btn-gnavi {
@@ -315,6 +356,9 @@ responsiv
 /* 1080px〜：小型PC
 ------------------------------ */
 @media screen and (min-width: 1080px) {
+  header .btn-gnavi {
+    display: none;
+  }
   header .header-sns,
   header .header-search {
     display: inline;
@@ -323,7 +367,7 @@ responsiv
     margin: 15px 0 0 0px;
   }
   header .header-contents {
-    width: 90%;
+    width: 95%;
   }
   header .header-left {
     display: flex;
@@ -350,9 +394,6 @@ responsiv
     white-space: nowrap;
     padding-left: 10%;
     height: 50%;
-  }
-  header .header-menu .btn-gnavi {
-    display: none;
   }
   header nav.gnavi {
     padding: 0 0 0 50px;
@@ -425,7 +466,7 @@ responsiv
   }
   header .header-menu ul > li {
     display: inline-block;
-    padding: 5px;
+    padding: 5px 2px 5px 2px;
     font-weight: bold;
   }
   header .header-menu ul > li.head >a {
@@ -468,15 +509,21 @@ responsiv
     display: flex;
     margin-left: auto;
   }
+  header .header-search {
+    margin: 15px 0 0 0px;
+  }
 }
 /* 1280px〜：大型PC
 ------------------------------ */
 @media screen and (min-width: 1280px) {
   header .header-contents {
-    width: 80%;
+    width: 90%;
   }
   header .btn-gnavi {
     display: none;
+  }
+  header .header-menu ul > li {
+    padding: 5px 1px 5px 1px;
   }
   header .header-menu a {
     font-size: 0.8rem;
@@ -491,6 +538,9 @@ responsiv
   }
   .btn-gnavi {
     display: none;
+  }
+  .header-menu ul > li {
+    padding: 5px;
   }
 }
 @-moz-keyframes sk-scaleout {

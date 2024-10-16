@@ -123,16 +123,12 @@
         <!-- //rand tag-->
 
       <section class="amz">
+        <b>※ここから購入するとブログ継続・強化への寄付になります※</b>
         <ul>
         <?php echo amazon_box("single_under") ?>
         </ul>
       </section>
 
-
-
-
-
-       
     <section class="dazn">
       <a href="https://prf.hn/click/camref:1101l4sPt/creativeref:1011l20497" target="_blank" rel="sponsored">
       <img class="max-width" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/dazn_nfl-500_100-02.jpg">

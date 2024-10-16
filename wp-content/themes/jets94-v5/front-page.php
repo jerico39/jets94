@@ -85,7 +85,16 @@
       </div>
     </div>
   </section>
-
+  <section class="row-slider" id="amz">
+    <div class="ttl"><h3>Amazonのオススメ[※ここから購入するとブログ継続・強化への寄付になります※]</h3></div>
+    <div class="inner">
+      <div class="lineup">
+        <ul class="lineup-carousel top10">
+          <?php echo amazon_box("top_clm") ?>
+        </ul>
+      </div>
+    </div>
+  </section>
   </secctio>
   <section class="l-clm2" id="rss_jp">
     <div class="sec">
@@ -111,7 +120,7 @@
     <div class="sec">
       <div class="ttl">
         <h3>NFLファンブログ RSS</h3>
-        
+        <p><a href="/rss-all/?1">【ブログ一覧へ】</a></p>
       </div>
       <?php
       $set_rss_code = "";
@@ -125,19 +134,9 @@
       'source' => $set_rss_code
       ));
       ?>
-      <p><a href="/rss-all/?1">【ブログ一覧へ】</a></p>
     </div>
   </section>
-  <section class="row-slider" id="amz">
-    <div class="ttl"><h3>JETS狂のオススメ</h3></div>
-    <div class="inner">
-      <div class="lineup">
-        <ul class="lineup-carousel top10">
-          <?php echo amazon_box("top_clm") ?>
-        </ul>
-      </div>
-    </div>
-  </section>
+
   <section class="ad" id="ad">
        <!-- ad jets94-top-row02 -->
        <ins class="adsbygoogle"

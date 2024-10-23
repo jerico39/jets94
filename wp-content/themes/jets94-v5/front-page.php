@@ -45,6 +45,7 @@
    
       <div class="topics" > 
  <!-- ad jets94-top-topics -->
+      <!--
       <ins class="adsbygoogle"
       style="display:block"
       data-ad-client="ca-pub-1827178535199750"
@@ -54,6 +55,8 @@
       <script>
       (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
+      -->
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/bnr_senkyo-20241023.jpg"/>
       </div>
 <!--//ad -->
     </div>

@@ -367,4 +367,9 @@ add_shortcode( 'baloon-line-right', function( $atts, $content = null ) {
 });
 //Amazonリンク用Function
 include('inc/amazon-link.php');
+
+//デフォルトの自動サムネイル リンクさせない
+if ( isset( $GLOBALS['wp_embed'] ) ) {
+	remove_filter( 'the_content', array( $GLOBALS['wp_embed'], 'autoembed' ), 8 );
+}
 ?>

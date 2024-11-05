@@ -368,8 +368,31 @@ add_shortcode( 'baloon-line-right', function( $atts, $content = null ) {
 //Amazonリンク用Function
 include('inc/amazon-link.php');
 
-//デフォルトの自動サムネイル リンクさせない
+//▼デフォルトのサイト内自動サムネイル サイト内リンクさせない
 if ( isset( $GLOBALS['wp_embed'] ) ) {
 	remove_filter( 'the_content', array( $GLOBALS['wp_embed'], 'autoembed' ), 8 );
+
+	function my_autoembed( $content ) {
+		$content = wp_replace_in_html_tags( $content, array( "\n" => '<!-- wp-line-break -->' ) );
+		if ( preg_match( '#(^|\s|>)https?://#i', $content ) ) {
+			$content = preg_replace_callback( '|^(\s*)(https?://[^\s<>"]+)(\s*)$|im', 'my_autoembed_callback', $content );
+			$content = preg_replace_callback( '|(<p(?: [^>]*)?>\s*)(https?://[^\s<>"]+)(\s*<\/p>)|i', 'my_autoembed_callback', $content );
+		}
+		return str_replace( '<!-- wp-line-break -->', "\n", $content );
+	}
+
+	add_filter( 'the_content', 'my_autoembed', 8 );
+
+	function my_autoembed_callback( $match ) {
+		$url = $match[2];
+		$url_host = str_replace( 'www.', '', parse_url( $url, PHP_URL_HOST ) );
+		$home_url_host = str_replace( 'www.', '', parse_url( home_url(), PHP_URL_HOST ) );
+		if ( $url_host && $url_host == $home_url_host ) {
+			return $url;
+		}
+
+		return $GLOBALS['wp_embed']->autoembed_callback( $match );
+	}
 }
+//▲デフォルトのサイト内自動サムネイル サイト内リンクさせない
 ?>

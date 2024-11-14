@@ -1,4 +1,5 @@
 <?php 
+//*2024/11/14 $place=single_under のみこの内部でulタグを付与する。
 function amazon_box($place){
   //検索条件
   $metaq[] = array('key' => 'az_place',	// キー：カスタムフィールド名（type）
@@ -19,16 +20,27 @@ function amazon_box($place){
     $post_disp = "";
     $post_disp_sum = "";
   if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
+    if($place=="single_under" && $cnt==0){
+      $post_disp_sum = "<ul>";
+    }
       $post_disp = "";
       $post_disp  = get_field('az_tag1');
       if(!empty(get_field('az_tag2'))){
         $post_disp  .= "<br/>" . get_field('az_tag2');
       }
 
+
       $post_disp_sum .= "<li>".$post_disp."</li>";
+      if($place=="single_under" && $cnt==3){
+          $post_disp_sum .= "</ul><ul>";
+      }
       $cnt ++;
     // if ($cnt % 2 == 0) $post_disp .= "<br/>";
-  endwhile; endif; wp_reset_postdata(); 
+  endwhile; endif; wp_reset_postdata();
+  if($place=="single_under"){
+    $post_disp_sum .= "</ul>";
+  } 
+  
   return $post_disp_sum;
 }
 ?>

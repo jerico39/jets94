@@ -124,9 +124,7 @@
 
       <section class="amz">
         <b>※ここから購入するとブログ継続・強化への寄付になります※</b>
-        <ul>
         <?php echo amazon_box("single_under") ?>
-        </ul>
       </section>
 
     <section class="dazn">

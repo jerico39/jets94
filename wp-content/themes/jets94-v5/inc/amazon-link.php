@@ -24,16 +24,37 @@ function amazon_box($place){
       $post_disp_sum = "<ul>";
     }
       $post_disp = "";
-      $post_disp  = get_field('az_tag1');
-      if(!empty(get_field('az_tag2'))){
-        $post_disp  .= "<br/>" . get_field('az_tag2');
-      }
+      $post_disp = get_field('az_tag1');
 
 
-      $post_disp_sum .= "<li>".$post_disp."</li>";
-      if($place=="single_under" && $cnt==3){
-          $post_disp_sum .= "</ul><ul>";
-      }
+      $result = json_decode($post_disp);
+      //json形式の判定jsonの場合作り替える
+      if ($result !== null) {
+
+        // $post_disp .= $result;
+ 
+        //var_dump($result);
+        $item_link ="<a class='paapi5-pa-product-image-link' target='_blank' title='N/A' href='".$result->ItemsResult->Items[0]->DetailPageURL ."'>";
+        $post_disp = "";
+        $post_disp .=$item_link; 
+        $post_disp .="<img class='paapi5-pa-product-image-source' src='".$result->ItemsResult->Items[0]->Images->Primary->Large->URL."'>";
+        $post_disp .="</a>";
+        $post_disp .="<br/>";
+        $post_disp .=$item_link; 
+        $post_disp .=$result->ItemsResult->Items[0]->ItemInfo->Title->DisplayValue;
+        $post_disp .="</a>";
+
+     }
+          if(!empty(get_field('az_tag2'))){
+            $post_disp  .= "<br/>" . get_field('az_tag2');
+          }
+  
+  
+          $post_disp_sum .= "<li>".$post_disp."</li>";
+          if($place=="single_under" && $cnt==3){
+              $post_disp_sum .= "</ul><ul>";
+          }
+   
       $cnt ++;
     // if ($cnt % 2 == 0) $post_disp .= "<br/>";
   endwhile; endif; wp_reset_postdata();

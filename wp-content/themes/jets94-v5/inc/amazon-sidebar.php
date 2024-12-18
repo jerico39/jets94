@@ -20,6 +20,25 @@ $args = array(
 if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
     $post_disp = "";
     $post_disp  = get_field('az_tag1');
+
+    $result = json_decode($post_disp);
+    //json形式の判定jsonの場合作り替える
+    if ($result !== null) {
+
+      // $post_disp .= $result;
+
+      //var_dump($result);
+      $item_link ="<a class='paapi5-pa-product-image-link' target='_blank' title='N/A' href='".$result->ItemsResult->Items[0]->DetailPageURL ."'>";
+      $post_disp = "";
+      $post_disp .=$item_link; 
+      $post_disp .="<img class='paapi5-pa-product-image-source' src='".$result->ItemsResult->Items[0]->Images->Primary->Large->URL."'>";
+      $post_disp .="</a>";
+      $post_disp .="<br/>";
+      $post_disp .=$item_link; 
+      $post_disp .=$result->ItemsResult->Items[0]->ItemInfo->Title->DisplayValue;
+      $post_disp .="</a>";
+
+   }
     $post_disp  .= get_field('az_tag2');
 
     $post_disp_sum .= "<li>".$post_disp."</li>";

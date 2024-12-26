@@ -21,6 +21,18 @@ Template Name:page-rss-all
       </script>
       <!-- //google -->
       </section>
+
+        <section class="row-slider" id="amz">
+          <div class="ttl"><h3>Amazonのオススメ[※ここから購入するとブログ継続・強化への寄付になります※]</h3></div>
+          <div class="inner">
+            <div class="">
+              <ul class="lineup-carousel ">
+                <?php echo amazon_box("top_clm") ?>
+              </ul>
+            </div>
+          </div>
+      </section>
+
       <section class="rss-all">
         <h1>NFL RSS</h1>
         <p><a href="/youtube-all/">【NFL・アメフト系Youtube更新一覧】はこちら</a></p>

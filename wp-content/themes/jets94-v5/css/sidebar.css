@@ -42,8 +42,7 @@ section.side-list li p {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 200px;
-  height: 200px;
+  width: 300px;
   object-fit: cover;
   object-position: 50% 50%;
   border: 0;

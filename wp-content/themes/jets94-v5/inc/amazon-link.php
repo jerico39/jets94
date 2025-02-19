@@ -1,6 +1,6 @@
 <?php 
 //*2024/11/14 $place=single_under のみこの内部でulタグを付与する。
-function amazon_box($place){
+function amazon_box($place,$max=8){
   //検索条件
   $metaq[] = array('key' => 'az_place',	// キー：カスタムフィールド名（type）
           'value' => $place,			// 値：フォームで入力された値を配列で渡す
@@ -9,7 +9,7 @@ function amazon_box($place){
   $args = array(
     'post_type' => 'amazon',    // 投稿
     'post_status' => 'publish', // 公開された投稿、または固定ページを表示(デフォルト)
-    'posts_per_page' => 8,   // 表示する投稿数(-1を指定すると全投稿を表示)
+    'posts_per_page' => $max,   // 表示する投稿数(-1を指定すると全投稿を表示)
     'meta_query' => $metaq,	//検索条件
     'meta_key' => 'az_sort',// ソートキー
     'orderby' => 'meta_value_num', //ソートキーの扱い(数値型)

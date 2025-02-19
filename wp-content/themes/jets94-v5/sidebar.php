@@ -2,7 +2,7 @@
 <!--sidebar-->
 <section class="amz-sidebar">
   <ul>
-    <?php echo amazon_box("side_01") ?>
+    <?php echo amazon_box("side_01",2) ?>
   </ul>
 </section>  
 <section class="ad">
@@ -63,7 +63,7 @@
 </section>
 <section class="amz-sidebar">
   <ul>
-    <?php echo amazon_box("side_02") ?>
+    <?php echo amazon_box("side_02",12) ?>
   </ul>
 </section>
 <section class="ad">

@@ -221,7 +221,7 @@
  <?php //▲コメント ?>
       </ul>
     </div>
-    <div id="link-croud" name="link-croud" class="sec link-croud">
+    <div id="link-croud" class="sec link-croud">
       <div class="ttl">
         <h3>リンク集</h3>
       </div>

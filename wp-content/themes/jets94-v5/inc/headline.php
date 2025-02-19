@@ -6,7 +6,7 @@
 	<?php query_posts('ignore_sticky_posts=1&showposts=5&cat='.-$cat_slug->cat_ID.''); $i = 5; ?>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	
-		  <a rel="bookmark" title="<?php _e('Permanent Link to','cover-wp') ?>" href="<?php the_permalink(); ?>" title="">
+		  <a rel="bookmark" title="<?php _e('Permanent Link to','cover-wp') ?>" href="<?php the_permalink(); ?>" >
 		  	<?php the_post_thumbnail( 'large' ); ?>
           <p class="ttl"><?php the_title(); ?></p></a>
 		  <?php

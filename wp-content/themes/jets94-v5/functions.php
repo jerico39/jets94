@@ -237,7 +237,7 @@ function url_to_blog_card($the_content) {
 		$thumbnail = get_the_post_thumbnail($id, 'thumbnail', array('style' => '', 'class' => 'blog-card-thumb-image'));//サムネイルの取得（要100×100のサムネイル設定）
 
 			if ( !$thumbnail ) {//サムネイルが存在しない場合
-        $thumbnail = '<img src="'.get_template_directory_uri().'/images/no-image.png" style="width:100px;height:100px;" />';
+        $thumbnail = '<img src="'.get_template_directory_uri().'/images/no-image.png" style="width:100px;height:100px;" >';
       }
       //取得した情報からブログカードのHTMLタグを作成
       $tag = '<div class="blog-card"><div class="blog-card-thumbnail"><a href="'.$url.'" target="_blank" class="blog-card-thumbnail-link">'.$thumbnail.'</a></div><div class="blog-card-content"><div class="blog-card-title"><a href="'.$url.'" target="_blank" class="blog-card-title-link">'.$title.'</a></div><div class="blog-card-excerpt">'.$excerpt.'</div></div><div class="blog-card-footer clear"><span class="blog-card-date">'.$date.'</span></div></div>';
@@ -335,7 +335,7 @@ add_shortcode( 'baloon-line-left', function( $atts, $content = null ) {
 	if( isset( $atts['img'] ) ) {
 		$before .= '<figure><img src="' . $atts['img'] . '" width="60" height="60" alt="';
 		$before .= isset( $atts['caption'] ) ? $atts['caption'] : '';
-		$before .= '" /></figure>';
+		$before .= '" ></figure>';
 	}
 	if( isset( $atts['caption'] ) ) {
 		$before .= '<span class="balloon-img-caption">' . $atts['caption'] .'</span>';
@@ -355,7 +355,7 @@ add_shortcode( 'baloon-line-right', function( $atts, $content = null ) {
 	if( isset( $atts['img'] ) ) {
 		$before .= '<figure><img src="' . $atts['img'] . '" width="60" height="60" alt="';
 		$before .= isset( $atts['caption'] ) ? $atts['caption'] : '';
-		$before .= '" /></figure>';
+		$before .= '" ></figure>';
 	}
 	if( isset( $atts['caption'] ) ) {
 		$before .= '<span class="balloon-img-caption">' . $atts['caption'] .'</span>';

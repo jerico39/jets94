@@ -47,7 +47,7 @@ $rss_nfl = fetch_feed(array(
 	        <a href='<?php echo $item->get_permalink(); ?>' title='<?php echo $title."(".$item->get_feed()->get_title().")"; ?>' target="_blank">
 				<?php echo $w_title ; ?>
 				<br/><?php echo $w_description ;?>
-			</a><br />
+			</a><br >
 	       </li>
 	    <?php endforeach; ?>
 

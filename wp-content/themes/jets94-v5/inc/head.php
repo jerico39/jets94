@@ -17,7 +17,7 @@
 <link rel="dns-prefetch" href="//www.gstatic.com">
 -->
 <!--Bing Webmaster tools-->
-<meta name="msvalidate.01" content="E9968BAC09E30541CFEB88C97E674710" />
+<meta name="msvalidate.01" content="E9968BAC09E30541CFEB88C97E674710" >
 <!--Twitter-->
 <link rel="dns-prefetch" href="//twitter.com">
 <link rel="dns-prefetch" href="//cdn.api.twitter.com">

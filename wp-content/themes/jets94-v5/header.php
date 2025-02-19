@@ -31,7 +31,7 @@
       <a href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jets94-logo-header.svg"/></a>
       <div class="search">
         <form role="search" action="/" name="search1" method="get">
-          <input type="text" id="s" type="text" value="" name="s" placeholder=""/>
+          <input type="text" id="s" value="" name="s" placeholder=""/>
           <button class="fas" type="submit" value="&amp;#xf002"> <i class="fas fa-search"></i></button>
         </form>
         <a href="https://twitter.com/jetskyou" target="_blank"><i class="fab fa-twitter fa-2x"></i></a><a href="https://www.facebook.com/jets94/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a><a href="https://www.youtube.com/channel/UCr3e1KBWNJAlI6Nc4nSpEjw" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>

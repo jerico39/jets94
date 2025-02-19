@@ -91,7 +91,7 @@
 
 <section class="list-search">
       <div><span class="search">ワード  
-      <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search …', 'placeholder' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+      <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search …', 'placeholder' ); ?>" value="<?php echo get_search_query(); ?>" name="s" >
         </span>
       </div>
     </section>

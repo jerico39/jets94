@@ -17,11 +17,8 @@ get_header();
 	border-radius: 2em;
 }
 </style>
-<div class="container single">
-  <div class="l-page">
-    <div class="l-main">
-    <!--↓Access ranking-->
-    <section class="row-slider ranking">
+  <!--↓Access ranking-->
+  <section class="row-slider ranking">
     <div class="ttl">
       <h3>今日のアクセスランキング</h3>
       <a href="/ranking-all/">【ランキング一覧へ】</a>
@@ -47,6 +44,10 @@ get_header();
     </div>
   </section>
   <!--↑Access ranking-->
+<div class="container single">
+  <div class="l-page">
+    <div class="l-main">
+  
     <h1>タグ一覧</h1>
     <section class="tag_cloud">
       <?php wp_tag_cloud('smallest=7 & largest=24 & number=80'); ?>

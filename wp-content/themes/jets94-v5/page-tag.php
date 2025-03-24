@@ -4,7 +4,6 @@ Template Name:page-tag
 */
 get_header();
   ?>
-<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/list.css">
 <style>
   .tag_cloud>a {
 	display: inline-block;

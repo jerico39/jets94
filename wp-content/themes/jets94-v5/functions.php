@@ -15,8 +15,8 @@
 	add_theme_support( 'automatic-feed-links' );
 
 	//エラーレベル
-	//error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
-	error_reporting(E_ALL);
+	error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
+	//error_reporting(E_ALL);
 	
 //WP標準のブログカード停止(https://teratail.com/questions/55849)
 //しかし4.8では停止せず

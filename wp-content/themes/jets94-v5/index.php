@@ -79,14 +79,6 @@
   </section>
   <!--↑Access ranking-->
 
-
-
-
-
- 
-
-
-
 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 
 <section class="list-search">
@@ -107,6 +99,9 @@
         </div>
         <div><span class="search">主なタグ</span>
           <? echo $raundList;?>
+          <p>
+            <a href="/tagcloud/">【全てのタグ一覧へ】</a>
+          </p>
         </div>
       </section>
       <section class="list-search">

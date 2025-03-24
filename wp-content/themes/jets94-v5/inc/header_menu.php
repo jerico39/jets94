@@ -15,6 +15,8 @@
             <li><a href="/youtube-all/">Youtube更新情報</a></li>
             <li><a href="/wwe/">あつまれWWEの森</a></li>
             <li><a href="/about/">JETS狂の宴とは</a></li>
+            <li><a href="/tagcloud/">タグクラウド</a></li>
+
         </ul>
     </ul>
     <ul class="accordion">       

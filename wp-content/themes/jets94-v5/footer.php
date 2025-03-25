@@ -43,5 +43,7 @@ onLazyLoad();
 })(window, document);
 </script>
 <!--▲Twitter.jsの遅延読み込み-->
-<!--end footer--></body> 
+<!--end footer-->
+</div><!--//container(from各テンプレ) -->
+</body> 
 </html>

@@ -2,7 +2,7 @@
   global $template; // テンプレートファイルのパスを取得
   $temp_name = basename($template); // パスの最後の名前（ファイル名）を取得
   //echo "tpname:".$temp_name;
-  $search1 = '/front-page|wwe|single|index|rss-all/';
+  $search1 = '/front-page|wwe|single|index|rss-all|tagcloud/';
   $search2 = '/front-page|wwe|rss-all/';
   $search3 = '/index/';
   //if(strpos($temp_name,'front-page') !== false){ //TOP

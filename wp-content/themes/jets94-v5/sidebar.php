@@ -5,6 +5,12 @@
     <?php echo amazon_box("side_01",2) ?>
   </ul>
 </section>  
+
+<section class="ad">
+  	<!-- moneybox-300_600 -->
+    <div id="132522-3"><script src="//ads.themoneytizer.com/s/gen.js?type=3"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=132522&formatId=3"></script></div>
+</section>
+
 <section class="ad">
   	<!-- jets94-sidebar-300_600 -->
 	<ins class="adsbygoogle"

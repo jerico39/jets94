@@ -176,9 +176,10 @@
       <div class="ttl">
         <h3><a href="https://twitter.com/jetskyou/" target="_blank">#JETS狂のつぶやき</a></h3>
       </div>
-      <ul role="list"><a class="twitter-timeline" target="_blank" href="https://twitter.com/jetskyou" data-lang="ja" data-width="400" data-height="650" data-chrome="noheader" data-chrome="noheader nofooter" >Tweets by jetskyou
-</a>
-      </ul>
+      <ul role="list">
+        <a class="twitter-timeline" target="_blank" href="https://twitter.com/jetskyou?ref_src=twsrc%5Etfw" data-lang="ja" data-width="400" data-height="650" data-chrome="noheader nofooter" >Tweets by jetskyou
+      </a>
+    </ul>
     </div>
     <div class="sec comment">
       <div class="ttl">

@@ -1,7 +1,8 @@
 
 var front_page = function(root_pass){
 
-      new ReadTopText(root_pass);
+     /*read textの廃止 */
+     // new ReadTopText(root_pass);
 
   
   }

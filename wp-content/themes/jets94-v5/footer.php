@@ -47,7 +47,9 @@ onLazyLoad();
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 <!--▼Moneybox-->
+<!--
 <div id="132522-6"><script src="//ads.themoneytizer.com/s/gen.js?type=6" defer></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=132522&formatId=6" defer ></script></div>
+-->
 <!--▲Moneybox-->
 
 <!--end footer-->

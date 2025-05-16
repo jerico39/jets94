@@ -132,6 +132,7 @@ function get_ini($ini_file,$ini_key,$section = false){
 	exit;
 }
 /*はてぶメール投稿*/
+/*
 function send_hatena($post_id) {
 	$post = get_post($post_id);
 	$url = get_permalink($post);
@@ -140,6 +141,7 @@ function send_hatena($post_id) {
 	return;
 }
 add_action( 'publish_post', 'send_hatena', 1 ,6);
+*/
 /*　end はてぶ*/
 
 // コメント欄の変更

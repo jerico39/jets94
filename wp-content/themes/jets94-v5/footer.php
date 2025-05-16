@@ -26,7 +26,7 @@ window.removeEventListener('mousemove', onLazyLoad);
 window.removeEventListener('mousedown', onLazyLoad);
 window.removeEventListener('touchstart', onLazyLoad);
 window.removeEventListener('keydown', onLazyLoad);
-main1(); // TwitterのJS読み込み
+//main1(); // TwitterのJS読み込み //接続できないリンクを出力するため一旦停止
 }
 }
 window.addEventListener('scroll', onLazyLoad);
@@ -43,6 +43,8 @@ onLazyLoad();
 })(window, document);
 </script>
 <!--▲Twitter.jsの遅延読み込み-->
+<!--上記のTwitterの遅延読み込み処理は停止してasyncタグを以下に挿入-->
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 <!--▼Moneybox-->
 <div id="132522-6"><script src="//ads.themoneytizer.com/s/gen.js?type=6" defer></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=132522&formatId=6" defer ></script></div>

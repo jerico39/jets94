@@ -126,7 +126,10 @@
         <b>※ここから購入するとブログ継続・強化への寄付になります※</b>
         <?php echo amazon_box("single_under") ?>
       </section>
-
+    <section class="recommend">
+      <!--money box RECOMMENDED CONTENT-->
+      <div class="outbrain-tm" id="132522-16"><script src="//ads.themoneytizer.com/s/gen.js?type=16"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=132522&formatId=16"></script></div>
+    </section>             
     <section class="dazn">
       <a href="https://prf.hn/click/camref:1101l4sPt/creativeref:1011l20497" target="_blank" rel="sponsored">
       <img class="max-width" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bnr/dazn_nfl-500_100-02.jpg">

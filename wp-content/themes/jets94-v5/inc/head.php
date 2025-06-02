@@ -9,13 +9,7 @@
 <link rel='preconnect dns-prefetch' href="//www.googletagmanager.com">
 <link rel='preconnect dns-prefetch' href="//www.google-analytics.com">
 <!--Adsense-->
-<!-- Xpediaで関連コンテンツが表示されないため、コメントアウト→再表示-->
-<!--
-<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
-<link rel="dns-prefetch" href="//googleads.g.doubleclick.net">
-<link rel="dns-prefetch" href="//tpc.googlesyndication.com">
-<link rel="dns-prefetch" href="//www.gstatic.com">
--->
+
 <!--Bing Webmaster tools-->
 <meta name="msvalidate.01" content="E9968BAC09E30541CFEB88C97E674710" >
 <!--Twitter-->

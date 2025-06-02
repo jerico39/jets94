@@ -13,15 +13,15 @@ window.addEventListener('scroll', function() {
     newScript.async = true;
     
     //Adsense
-    var newScriptad = document.createElement('script');
-    newScriptad.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1827178535199750';
-    newScriptad.async = true;
+    //var newScriptad = document.createElement('script');
+    //newScriptad.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1827178535199750';
+    //newScriptad.async = true;
     
 
     // head 要素に追加
     var head = document.head || document.getElementsByTagName('head')[0];
     head.appendChild(newScript);
-    head.appendChild(newScriptad);
+    //head.appendChild(newScriptad);
     // スクリプトが追加されたことを記録
     scriptAdded = true;
   }

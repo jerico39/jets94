@@ -17,8 +17,6 @@
   gtag('config', 'G-WTD4FT34VV');
 </script>
 <!-- End Google Tag Manager →GA4へ変更 -->
-
-
 <!--adwards-->
 <script data-ad-client="ca-pub-1827178535199750" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!--//adwards-->

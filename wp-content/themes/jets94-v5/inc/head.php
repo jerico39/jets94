@@ -9,14 +9,14 @@
 <link rel='preconnect dns-prefetch' href="//www.googletagmanager.com">
 <!--Adsense-->
 <link rel='preconnect dns-prefetch' href="//pagead2.googlesyndication.com">
-
+<!--Money box-->
+<link rel='preconnect dns-prefetch' href="//ads.themoneytizer.com">
 <!--Bing Webmaster tools-->
 <meta name="msvalidate.01" content="E9968BAC09E30541CFEB88C97E674710" >
 
 
 <!--end.DNS prefetch-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- link(rel="stylesheet", href="https://cdn.simplecss.org/simple.min.css")-->
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/lib/simple.min.css">
 
 

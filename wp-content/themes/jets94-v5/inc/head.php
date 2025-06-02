@@ -7,12 +7,9 @@
 <meta http-equiv="x-dns-prefetch-control" content="on">
 <!--google analytics, Googleタグマネージャー(GA4)-->
 <link rel='preconnect dns-prefetch' href="//www.googletagmanager.com">
-<link rel='preconnect dns-prefetch' href="//www.google-analytics.com">
 <!--Adsense-->
 <link rel='preconnect dns-prefetch' href="//pagead2.googlesyndication.com">
 
-<!--MoneBox-->
-<link rel='preconnect dns-prefetch' href="//ads.themoneytizer.com">
 <!--Bing Webmaster tools-->
 <meta name="msvalidate.01" content="E9968BAC09E30541CFEB88C97E674710" >
 

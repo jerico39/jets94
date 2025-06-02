@@ -5,18 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!--DNS prefetch(2022/6/28 時代遅れ？いれつつ不要は削除)-->
 <meta http-equiv="x-dns-prefetch-control" content="on">
-<!--google analytics, Googleタグマネージャー-->
+<!--google analytics, Googleタグマネージャー(GA4)-->
 <link rel='preconnect dns-prefetch' href="//www.googletagmanager.com">
 <link rel='preconnect dns-prefetch' href="//www.google-analytics.com">
 <!--Adsense-->
+<link rel='preconnect dns-prefetch' href="//pagead2.googlesyndication.com">
 
+<!--MoneBox-->
+<link rel='preconnect dns-prefetch' href="//ads.themoneytizer.com">
 <!--Bing Webmaster tools-->
 <meta name="msvalidate.01" content="E9968BAC09E30541CFEB88C97E674710" >
-<!--Twitter-->
-<link rel="dns-prefetch" href="//twitter.com">
-<link rel="dns-prefetch" href="//cdn.api.twitter.com">
-<link rel="dns-prefetch" href="//p.twitter.com">
-<link rel="dns-prefetch" href="//platform.twitter.com">
+
 
 <!--end.DNS prefetch-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

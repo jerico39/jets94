@@ -1,4 +1,4 @@
-<div id='mbox-6'></div>
+<div id='132522-6'></div>
 <script>
 // 一度だけ実行されるようにフラグを設定
 var scriptAdded = false;
@@ -26,7 +26,7 @@ window.addEventListener('scroll', function() {
     head.appendChild(newScript);
 
     //ID=mbox-6 へ追加
-    var mobx6_element = document.getElementById('mbox-6')
+    var mobx6_element = document.getElementById('132522-6')
     mobx6_element.appendChild(moneyScript);
     mobx6_element.appendChild(moneyScript2);
 

@@ -1,4 +1,4 @@
-<!-- GA4 Speed-->
+<div id='mbox-6'></div>
 <script>
 // 一度だけ実行されるようにフラグを設定
 var scriptAdded = false;
@@ -12,17 +12,24 @@ window.addEventListener('scroll', function() {
     newScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-WTD4FT34VV';
     newScript.async = true;
     
-    //Adsense
-    //var newScriptad = document.createElement('script');
-    //newScriptad.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1827178535199750';
-    //newScriptad.async = true;
-    
+    //Money box(追尾)
+    var moneyScript = document.createElement('script');
+    moneyScript.src = '//ads.themoneytizer.com/s/gen.js?type=6';
+    moneyScript.async = true; 
+    var moneyScript2 = document.createElement('script');
+    moneyScript2.src = '//ads.themoneytizer.com/s/requestform.js?siteId=132522&formatId=6';
+    moneyScript2.async = true; 
+
 
     // head 要素に追加
     var head = document.head || document.getElementsByTagName('head')[0];
     head.appendChild(newScript);
-    //head.appendChild(newScriptad);
-    // スクリプトが追加されたことを記録
+
+    //ID=mbox-6 へ追加
+    var mobx6_element = document.getElementById('mbox-6')
+    mobx6_element.appendChild(moneyScript);
+    mobx6_element.appendChild(moneyScript2);
+
     scriptAdded = true;
   }
 });

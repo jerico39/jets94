@@ -107,6 +107,26 @@ EOF;
 	return $adTags;
 }
 add_shortcode('adsense', 'showads');
+
+
+//記事に共通のテキストを挿入ショートコード
+function ins_txt($atts){
+	
+	$ini_pass =  dirname(__DIR__)  . "\\" .  esc_html( get_stylesheet() ) ."\\csv\\". $atts['code'] .".txt";  //Xampp
+	
+	if (!file_exists($ini_pass)) {
+		$ini_pass = "csv/" . $atts['code'] .".txt";  //iniファイル(Linuxだとパスが変わる)
+	}
+
+		$file = file_get_contents($ini_pass, true);
+		return $file;
+}
+
+add_shortcode('inshtml','ins_txt');
+//例）[inshtml code="20250623"] → csv/20240623.txtを読んで表示
+//end
+
+
 //CSVファイルキャッシュバスター作成
 function get_cashbaster($filename){//キャッシュバスターを作成、ファイルが存在しなければ何も返さない
 	if(file_exists( __DIR__.$filename )){

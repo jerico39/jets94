@@ -1,6 +1,6 @@
 <?php get_template_part( 'inc/head' ) ;?>
 <?php get_template_part( 'inc/gatag' ) ;?>
-<div id="loading" class="">
+<div id="loading" class="loaded">
   <div class="spinner"></div>
 </div>
 <!--header-->

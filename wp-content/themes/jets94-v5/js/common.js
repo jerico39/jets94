@@ -67,9 +67,8 @@ $(function () {
 //ロード
 window.onload = function() {
 //読み込みが終わったらローディング非表示
-  const spinner = document.getElementById('loading');
-  // Add .loaded to .loading
-  spinner.classList.add('loaded');
+  //const spinner = document.getElementById('loading');
+  //spinner.classList.add('loaded');
 }
 
 

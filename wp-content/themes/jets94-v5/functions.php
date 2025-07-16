@@ -70,15 +70,18 @@ function adMoreReplace($contentData) {
 	<span class="c-adtxt c-adtxt-article">[SPONSORED LINK]</span>
 	<div class="l-ad l-ad-article_middle">
 	<!-- ad jets94-single-more -->
-	<ins class="adsbygoogle"
-		 style="display:block"
-		 data-ad-client="ca-pub-1827178535199750"
-		 data-ad-slot="3752614732"
-		 data-ad-format="auto"
-		 data-full-width-responsive="true"></ins>
-	<script>
-		 (adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1827178535199750"
+			crossorigin="anonymous"></script>
+		<!-- jets94-single-more -->
+		<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-1827178535199750"
+			data-ad-slot="3752614732"
+			data-ad-format="auto"
+			data-full-width-responsive="true"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
 	<!--//ad-->
 	</div>
 EOF;

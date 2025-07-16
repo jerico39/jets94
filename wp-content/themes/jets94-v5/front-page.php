@@ -144,16 +144,19 @@
 
   <section class="ad" id="ad">
        <!-- ad jets94-top-row02 -->
-       <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-1827178535199750"
-      data-ad-slot="8909464840"
-      data-ad-format="auto"
-      data-full-width-responsive="true"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    <!--//ad -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1827178535199750"
+            crossorigin="anonymous"></script>
+        <!-- jets94-top-row02 -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-1827178535199750"
+            data-ad-slot="8909464840"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <!--//ad -->
   </section>
   <section class="row-slider youtube">
     <div class="ttl">

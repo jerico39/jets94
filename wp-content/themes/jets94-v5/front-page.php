@@ -45,18 +45,16 @@
    
       <div class="topics" > 
  <!-- ad jets94-top-topics -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1827178535199750"
-            crossorigin="anonymous"></script>
-        <!-- jets94-top-row01 -->
-        <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-1827178535199750"
-            data-ad-slot="2449389938"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1827178535199750"
+          crossorigin="anonymous"></script>
+      <!-- jets94-top-row01 -->
+      <ins class="adsbygoogle"
+          style="display:inline-block;width:378px;height:300px"
+          data-ad-client="ca-pub-1827178535199750"
+          data-ad-slot="2449389938"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
       </div>
 <!--//ad -->
     </div>

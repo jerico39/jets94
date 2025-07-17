@@ -259,9 +259,21 @@ div.balloon-right-line::before,
 div.balloon-right-line::after {
   border-left: 12px solid #bef18c;
 }
+
+
 /*
 end 吹き出し
 */
+/* 500以下のスマホ※指定なしではAdsenseが表示されない
+------------------------------ */
+@media screen and (max-width: 500px) {
+.adsbygoogle {
+    display: block;
+    min-width: 336px; /* Google推奨の最小サイズ */
+    min-height: 300px; /* Google推奨の最小サイズ */
+}
+}
+
 /* 768px～：タブレット
 ------------------------------ */
 @media screen and (min-width: 768px) {
@@ -302,6 +314,7 @@ end 吹き出し
     margin: 5px;
     font-size: 0.7rem;
   }
+
 }
 /* 1080px〜：小型PC
 ------------------------------ */

@@ -1,11 +1,7 @@
 <?php get_header();
   ?>
 <style>
-.adsbygoogle {
-    display: block;
-    min-width: 250px; /* Google推奨の最小サイズ */
-    min-height: 150px; /* Google推奨の最小サイズ */
-}
+
 </style>
 <script>
   var Obj

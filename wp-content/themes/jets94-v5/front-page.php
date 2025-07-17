@@ -1,6 +1,12 @@
 <?php get_header();
   ?>
+<style>
+.adsbygoogle {
+    display: block;
+    min-height: 150px; /* Google推奨の最小サイズ */
+}
 
+</style>
 <script>
   var Obj
   jQuery(document).ready(function () {

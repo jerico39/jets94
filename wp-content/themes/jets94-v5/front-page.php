@@ -1,6 +1,12 @@
 <?php get_header();
   ?>
-
+<style>
+.adsbygoogle {
+    display: block;
+    min-width: 468px; /* Google推奨の最小サイズ */
+    min-height: 150px; /* Google推奨の最小サイズ */
+}
+</style>
 <script>
   var Obj
   jQuery(document).ready(function () {
@@ -49,7 +55,7 @@
             crossorigin="anonymous"></script>
         <!-- jets94-top-topix -->
         <ins class="adsbygoogle"
-            style="display:inline-block;width:468px;height:60px"
+            style="display:inline-block"
             data-ad-client="ca-pub-1827178535199750"
             data-ad-slot="6384907881"
             data-ad-format="auto"

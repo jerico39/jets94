@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/lib/simple.min.css">
 
 
-<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/layout.css?u=22614">
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/layout.css?u=25614">
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/header.css?u=241008">
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/sidebar.css">
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/footer.css">

@@ -55,7 +55,6 @@
             crossorigin="anonymous"></script>
         <!-- jets94-top-topix -->
         <ins class="adsbygoogle"
-            style="display:inline-block"
             data-ad-client="ca-pub-1827178535199750"
             data-ad-slot="6384907881"
             data-ad-format="auto"

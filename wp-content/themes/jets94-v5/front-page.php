@@ -55,7 +55,7 @@
             crossorigin="anonymous"></script>
         <!-- jets94-top-topix -->
         <ins class="adsbygoogle"
-            style="display:block"
+            style="display:inline-block;width:468px;height:60px"
             data-ad-client="ca-pub-1827178535199750"
             data-ad-slot="6384907881"
             data-ad-format="auto"
@@ -154,7 +154,7 @@
             crossorigin="anonymous"></script>
         <!-- jets94-top-row02 -->
         <ins class="adsbygoogle"
-            style="display:inline-block;width:468px;height:60px"
+            style="display:inline-block;"
             data-ad-client="ca-pub-1827178535199750"
             data-ad-slot="8909464840"
             data-ad-format="auto"

@@ -43,17 +43,16 @@
       </div>
        <!--//Topics-->
    
-      <div class="topics ad-topics" > 
+      <div class="topics adcenter" > 
  <!-- ad jets94-top-topics -->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1827178535199750"
             crossorigin="anonymous"></script>
         <!-- jets94-top-topix -->
         <ins class="adsbygoogle"
-           	style="display:block"
+ 	style="display:inline-block;width:336px;height:280px"
             data-ad-client="ca-pub-1827178535199750"
             data-ad-slot="6384907881"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
+		></ins>
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
@@ -142,18 +141,18 @@
     </div>
   </section>
 
-  <section class="ad" id="ad">
+  <section class="ad adcenter" id="ad">
        <!-- ad jets94-top-row02 -->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1827178535199750"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous" defer></script>
         <!-- jets94-top-row02 -->
         <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-1827178535199750"
             data-ad-slot="8909464840"
-            data-ad-format="auto"
+            data-ad-format="fluid"
             data-full-width-responsive="true"></ins>
-        <script>
+        <script defer>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
         <!--//ad -->

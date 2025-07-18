@@ -264,23 +264,10 @@ div.balloon-right-line::after {
 /*
 end 吹き出し
 */
-/* 500以下のスマホ※指定なしではAdsenseが表示されない
+/* adsense
 ------------------------------ */
-.adsbygoogle {
-  display: block;
-  min-height: 150px; /* 必須！最低でも100〜150px程度 */
-}
-.ad-topics {
-  min-height: 150px;
-}
-@media screen and (min-width: 451px) and (max-width: 487px) {
-    .adsbygoogle {
-        display: block !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        
-    }
-}
+.adcenter {text-align:center}
+
 
 /* 768px～：タブレット
 ------------------------------ */

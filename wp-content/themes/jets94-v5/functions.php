@@ -77,7 +77,7 @@ function adMoreReplace($contentData) {
 			style="display:block"
 			data-ad-client="ca-pub-1827178535199750"
 			data-ad-slot="3752614732"
-			data-ad-format="auto"
+			data-ad-format="fluid"
 			data-full-width-responsive="true"></ins>
 		<script>
 			(adsbygoogle = window.adsbygoogle || []).push({});
@@ -102,7 +102,7 @@ function showads() {
 			style="display:block"
 			data-ad-client="ca-pub-1827178535199750"
 			data-ad-slot="3752614732"
-			data-ad-format="auto"
+			data-ad-format="fluid"
 			data-full-width-responsive="true"></ins>
 		<script>
 			(adsbygoogle = window.adsbygoogle || []).push({});

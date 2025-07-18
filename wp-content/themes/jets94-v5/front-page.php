@@ -43,7 +43,7 @@
       </div>
        <!--//Topics-->
    
-      <div class="topics" > 
+      <div class="topics ad-topics" > 
  <!-- ad jets94-top-topics -->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1827178535199750"
             crossorigin="anonymous"></script>

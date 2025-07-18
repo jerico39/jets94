@@ -267,9 +267,11 @@ end 吹き出し
 /* 500以下のスマホ※指定なしではAdsenseが表示されない
 ------------------------------ */
 .adsbygoogle {
-    min-width: 320px;
-    min-height: 100px;
-    display: block !important;
+  display: block;
+  min-height: 150px; /* 必須！最低でも100〜150px程度 */
+}
+.ad-topics {
+  min-height: 150px;
 }
 @media screen and (min-width: 451px) and (max-width: 487px) {
     .adsbygoogle {

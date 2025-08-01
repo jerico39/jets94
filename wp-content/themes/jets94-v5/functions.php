@@ -125,6 +125,7 @@ function ins_txt($atts){
 	}
 
 		$file = file_get_contents($ini_pass, true);
+		$file = "<!--shortcode-->" . $file ."<!--//shortcode-->";
 		return $file;
 }
 

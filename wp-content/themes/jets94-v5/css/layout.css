@@ -259,16 +259,31 @@ div.balloon-right-line::before,
 div.balloon-right-line::after {
   border-left: 12px solid #bef18c;
 }
-
-
 /*
 end 吹き出し
 */
 /* adsense
 ------------------------------ */
-.adcenter {text-align:center}
-
-
+.adcenter {
+  text-align: center;
+}
+/*info-g Style*/
+#info-g h2 {
+  background-color: transparent;
+}
+#info-g .card:after,
+#info-g .card:before,
+#info-g .clearfix:after,
+#info-g .clearfix:before,
+#info-g .container:after,
+#info-g .container:before,
+#info-g .grid:after,
+#info-g .grid:before,
+#info-g .nav:after,
+#info-g .nav:before {
+  content: normal;
+}
+/* end info-g Style*/
 /* 768px～：タブレット
 ------------------------------ */
 @media screen and (min-width: 768px) {
@@ -309,7 +324,6 @@ end 吹き出し
     margin: 5px;
     font-size: 0.7rem;
   }
-
 }
 /* 1080px〜：小型PC
 ------------------------------ */

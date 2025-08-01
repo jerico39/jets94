@@ -1,6 +1,6 @@
 <?php get_header();
   ?>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/single.js?s=1008"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/single.js?s=250801"></script>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/single.css">
 <div class="container single">
   <div class="l-page">

@@ -99,11 +99,10 @@ function showads() {
 			crossorigin="anonymous"></script>
 		<!-- jets94-single-more -->
 		<ins class="adsbygoogle"
-			style="display:block"
+			style="display:inline-block;width:336px;height:280px"
 			data-ad-client="ca-pub-1827178535199750"
 			data-ad-slot="3752614732"
-			data-ad-format="fluid"
-			data-full-width-responsive="true"></ins>
+			></ins>
 		<script>
 			(adsbygoogle = window.adsbygoogle || []).push({});
 		</script>

@@ -22,6 +22,14 @@
 .u-text-right {
   text-align: right !important;
 }
+.u-text-link a {
+  background-color: transparent;
+  text-decoration: none;
+  color: #0074d9;
+}
+.u-text-link a:hover {
+  text-decoration: underline;
+}
 .u-text-justify {
   text-align: justify !important;
   text-justify: inter-ideograph !important;

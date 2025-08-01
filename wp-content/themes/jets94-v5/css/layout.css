@@ -268,19 +268,19 @@ end 吹き出し
   text-align: center;
 }
 /*info-g Style*/
-#info-g h2 {
+.info-g h2 {
   background-color: transparent;
 }
-#info-g .card:after,
-#info-g .card:before,
-#info-g .clearfix:after,
-#info-g .clearfix:before,
-#info-g .container:after,
-#info-g .container:before,
-#info-g .grid:after,
-#info-g .grid:before,
-#info-g .nav:after,
-#info-g .nav:before {
+.info-g .card:after,
+.info-g .card:before,
+.info-g .clearfix:after,
+.info-g .clearfix:before,
+.info-g .container:after,
+.info-g .container:before,
+.info-g .grid:after,
+.info-g .grid:before,
+.info-g .nav:after,
+.info-g .nav:before {
   content: normal;
 }
 /* end info-g Style*/

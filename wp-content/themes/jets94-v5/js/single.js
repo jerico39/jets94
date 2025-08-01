@@ -6,7 +6,7 @@ $(function(){
 //記事全体を取り出す
     var set_body = $('.article-body').html();
 
-    if (!text.includes("<canvas")) { //Add-2025080-canvasタグを含む場合、描写が消されるので置換処理をしない
+    if (!set_body.includes("<canvas")) { //Add-2025080-canvasタグを含む場合、描写が消されるので置換処理をしない
           set_body = emphasisCharacter('”', '”', set_body);
           set_body = emphasisCharacter('「', '」',set_body);
           //文字列を入れ替えた結果と置き換え

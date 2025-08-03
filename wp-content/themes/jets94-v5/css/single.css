@@ -70,6 +70,9 @@ article p {
 article .article-eyecatch {
   text-align: center;
 }
+article .article-eyecatch img {
+  margin: auto;
+}
 article .article-body ul {
   padding: 1em 1em 1em 2em;
   -moz-border-bottom-colors: none;

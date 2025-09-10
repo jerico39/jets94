@@ -175,7 +175,12 @@
 
   <section class="l-clm3">
     <div class="sec">
-      <a class="twitter-timeline" href="https://twitter.com/jetskyou?ref_src=twsrc%5Etfw">Tweets by jetskyou</a>
+      <div class="ttl">
+        <h3>関連TV RSS</h3>
+      </div>
+      <ul class="list">
+      <?php include('inc/rss-tv.php'); ?>
+      </ul>
     </div>
     <div class="sec comment">
       <div class="ttl">

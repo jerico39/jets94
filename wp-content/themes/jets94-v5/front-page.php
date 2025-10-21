@@ -43,7 +43,7 @@
       </div>
        <!--//Topics-->
    
-      <div class="topics adcenter" > 
+      <div class="topics adcenter"> 
  <!-- ad jets94-top-topics -->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1827178535199750"
             crossorigin="anonymous"></script>
@@ -52,6 +52,8 @@
  	style="display:inline-block;width:336px;height:280px"
             data-ad-client="ca-pub-1827178535199750"
             data-ad-slot="6384907881"
+	    data-auto-format="false"
+	    data-full-width-responsive="false">
 		></ins>
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
@@ -61,12 +63,20 @@
     </div>
   </section>
 
+ <section class="row-slider" id="amz">
+    <div class="ttl"><h3>Amazonのオススメ[※ここから購入するとブログ継続・強化への寄付になります※]</h3></div>
+    <div class="inner">
+      <div class="lineup">
+        <ul class="lineup-carousel top10">
+          <?php echo amazon_box("top_clm") ?>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  
   <section class="row-slider ranking">
     <div class="ttl">
       <h3>週間アクセスランキング</h3>
-
     </div>
     <div class="inner">
       <div class="lineup">
@@ -89,17 +99,24 @@
       </div>
     </div>
   </section>
-  <section class="row-slider" id="amz">
-    <div class="ttl"><h3>Amazonのオススメ[※ここから購入するとブログ継続・強化への寄付になります※]</h3></div>
-    <div class="inner">
-      <div class="lineup">
-        <ul class="lineup-carousel top10">
-          <?php echo amazon_box("top_clm") ?>
-        </ul>
-      </div>
-    </div>
+ 
+    <section class="ad adcenter" id="ad">
+       <!-- ad jets94-top-row02 -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1827178535199750"
+            crossorigin="anonymous" defer></script>
+        <!-- jets94-top-row02 -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-1827178535199750"
+            data-ad-slot="8909464840"
+            data-ad-format="fluid"
+            data-full-width-responsive="true"></ins>
+        <script defer>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <!--//ad -->
   </section>
-  </secctio>
+  
   <section class="l-clm2" id="rss_jp">
     <div class="sec">
       <div class="ttl">
@@ -141,22 +158,7 @@
     </div>
   </section>
 
-  <section class="ad adcenter" id="ad">
-       <!-- ad jets94-top-row02 -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1827178535199750"
-            crossorigin="anonymous" defer></script>
-        <!-- jets94-top-row02 -->
-        <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-1827178535199750"
-            data-ad-slot="8909464840"
-            data-ad-format="fluid"
-            data-full-width-responsive="true"></ins>
-        <script defer>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-        <!--//ad -->
-  </section>
+
   <section class="row-slider youtube">
     <div class="ttl">
       <h3>NFL系Youtube</h3>

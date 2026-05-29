@@ -176,14 +176,10 @@
 
 
   <section class="l-clm3">
-    <div class="sec">
-      <div class="ttl">
-        <h3>関連TV RSS</h3>
-      </div>
-      <ul class="list">
-      <?php include('inc/rss-tv.php'); ?>
-      </ul>
+    <div class="">
+      <?php include('inc/top_schedule.php'); ?>
     </div>
+
     <div class="sec comment">
       <div class="ttl">
         <h3>コメント頂きました</h3>

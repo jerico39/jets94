@@ -245,7 +245,7 @@ foreach ($data as $item) {
 				// 今日の日付を元に固定ランダム生成
 				mt_srand(date('Ymd'));
 				// 10〜99 の2桁ランダム
-				$dailyRandom = mt_rand(1, 60);
+				$dailyRandom = mt_rand(1, 100);
 				$args = array(
 					'tag'            => 'プレビュー', // タグスラッグ
 					'posts_per_page' => 1,

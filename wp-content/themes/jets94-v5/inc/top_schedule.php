@@ -271,9 +271,9 @@ foreach ($data as $item) {
 					endwhile;
 					wp_reset_postdata();
 				endif;
-
-
 		}else{
+
+			$text = str_replace('。', "。<br/>", $result['advice']);
 			$advice = "<div class='advice'>";
 			$advice .= "AI 勝利への金言";
 			$advice .= "<span class='advice-title'>";
@@ -281,7 +281,6 @@ foreach ($data as $item) {
 			$advice .= "</span>";
 			$advice .= "</div>";
 		}
-
 
         break;
     }
@@ -327,9 +326,11 @@ HTML;
 
 
 } else {
-
-    echo "今後の試合はありません。";
-
+echo <<<HTML
+    <div class="next-game-card">
+		{$advice}
+	</div>
+HTML;
 }
 ?>
 

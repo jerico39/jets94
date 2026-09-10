@@ -71,6 +71,14 @@
     color: #b4ed07;
 }
 
+.next-game-card .image-label {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    color: #c58cf3;
+}
+
+
 .next-game-card .bar {
     width: 100%;
     height: 18px;
@@ -240,37 +248,7 @@ foreach ($data as $item) {
 
 		if($result['advice'] == ""){
 
-				//金言が無い(開幕前)は、プレビュー記事のサムネ(日替わりランダム)
-				$advice = "";
-				// 今日の日付を元に固定ランダム生成
-				mt_srand(date('Ymd'));
-				// 10〜99 の2桁ランダム
-				$dailyRandom = mt_rand(1, 100);
-				$args = array(
-					'tag'            => 'プレビュー', // タグスラッグ
-					'posts_per_page' => 1,
-					'offset'         => $dailyRandom,
-					'order' => 'DESC',
-				);
-				$query = new WP_Query($args);
-				if ($query->have_posts()) :
-					while ($query->have_posts()) :
-						$query->the_post();
-						$permalink = get_permalink();
-						$thumbnail = has_post_thumbnail()
-					? get_the_post_thumbnail(get_the_ID(), 'medium')
-					: '';
-					$advice = <<<HTML
-							<div class="pickup-post">
-								※開幕まで日替わりセクシー画像をお楽しみください
-								<a href="{$permalink}">
-								{$thumbnail}
-								</a>
-							</div>
-						HTML;
-					endwhile;
-					wp_reset_postdata();
-				endif;
+
 		}else{
 
 			$text = str_replace('。', "。<br/>", $result['advice']);
@@ -281,6 +259,38 @@ foreach ($data as $item) {
 			$advice .= "</span>";
 			$advice .= "</div>";
 		}
+
+        // 今日の日付を元に固定ランダム生成
+        mt_srand(date('Ymd'));
+        // 10〜99 の2桁ランダム
+        $dailyRandom = mt_rand(1, 100);
+        $args = array(
+            'tag'            => 'プレビュー', // タグスラッグ
+            'posts_per_page' => 1,
+            'offset'         => $dailyRandom,
+            'order' => 'DESC',
+        );
+        $query = new WP_Query($args);
+        if ($query->have_posts()) :
+            while ($query->have_posts()) :
+                $query->the_post();
+                $permalink = get_permalink();
+                $thumbnail = has_post_thumbnail()
+            ? get_the_post_thumbnail(get_the_ID(), 'medium')
+            : '';
+      
+            
+            $advice .= <<<HTML
+                    <div class="pickup-post">
+                        <p class="image-label">【本日のせくしぃファン】</p>
+                        <a href="{$permalink}">
+                        {$thumbnail}
+                        </a>
+                    </div>
+                HTML;
+            endwhile;
+            wp_reset_postdata();
+        endif;
 
         break;
     }

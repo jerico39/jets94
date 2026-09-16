@@ -7,7 +7,8 @@ $(function(){
     var set_body = $('.article-body').html();
 
     if (!set_body.includes("<canvas")) { //Add-2025080-canvasタグを含む場合、描写が消されるので置換処理をしない
-          set_body = emphasisCharacter('”', '”', set_body);
+          //set_body = emphasisCharacter('”', '”', set_body);
+          set_body = kanaNameCharacter(set_body)
           set_body = emphasisCharacter('「', '」',set_body);
           //文字列を入れ替えた結果と置き換え
           $('.article-body').html(set_body);
@@ -16,6 +17,16 @@ $(function(){
 
   }
 });
+
+//名前(カナ・カナ)を青文字に変換
+function kanaNameCharacter(set_body) {
+  setclass = "u-name-color u-font-bold u-kana-name"
+  set_body = set_body.replace(
+  /[ァ-ヶー]+・[ァ-ヶー]+/g,
+  "<span class='" + setclass + "'>$&</span>"
+  );
+  return set_body;
+}
 
 function emphasisCharacter(set_a, set_b,set_body) {
   

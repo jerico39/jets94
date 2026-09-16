@@ -21,8 +21,9 @@ $(function(){
 //名前(カナ・カナ)を青文字に変換
 function kanaNameCharacter(set_body) {
   setclass = "u-name-color u-font-bold u-kana-name"
+  const regex = /(?:[ァ-ヶー]+(?:・[ァ-ヶー]+)+|[A-Za-z](?:\.[A-Za-z])+・[ァ-ヶー]+)/g;
   set_body = set_body.replace(
-  /[ァ-ヶー]+・[ァ-ヶー]+/g,
+  regex,
   "<span class='" + setclass + "'>$&</span>"
   );
   return set_body;

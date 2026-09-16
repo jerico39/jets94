@@ -18,14 +18,27 @@ $(function(){
   }
 });
 
-//名前(カナ・カナ)を青文字に変換
+//Pタグ内の名前(カナ・カナ)を青文字に変換
 function kanaNameCharacter(set_body) {
-  setclass = "u-name-color u-font-bold u-kana-name"
+
+  setclass = "u-name-color u-font-bold u-kana-name";
+
   const regex = /(?:[ァ-ヶー]+(?:・[ァ-ヶー]+)+|[A-Za-z](?:\.[A-Za-z])+・[ァ-ヶー]+)/g;
+
+  // Pタグの中だけを処理
   set_body = set_body.replace(
-  regex,
-  "<span class='" + setclass + "'>$&</span>"
+    /(<p\b[^>]*>)([\s\S]*?)(<\/p>)/gi,
+    function(match, openTag, content, closeTag) {
+
+      content = content.replace(
+        regex,
+        "<span class='" + setclass + "'>$&</span>"
+      );
+
+      return openTag + content + closeTag;
+    }
   );
+
   return set_body;
 }
 
